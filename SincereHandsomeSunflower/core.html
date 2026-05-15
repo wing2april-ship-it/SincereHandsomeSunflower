@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>核心主題 · 人生地圖</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="starfield"></div>
+
+  <!-- Password Gate -->
+  <div class="gate" id="gate">
+    <div class="gate-content">
+      <div class="gate-symbol">&#x2726;</div>
+      <div class="gate-title">人生地圖</div>
+      <div class="gate-subtitle">輸入密碼以進入</div>
+      <div class="gate-input-wrap">
+        <input type="password" id="gateInput" class="gate-input" placeholder="······" autocomplete="off">
+      </div>
+      <button class="gate-btn" id="gateBtn">進入</button>
+      <div class="gate-error-msg" id="gateError"></div>
+    </div>
+  </div>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">&#x2726; 人生地圖</a>
+    <ul class="nav-links">
+      <li><a href="core.html">核心主題</a></li>
+      <li><a href="gifts.html">天賦陰影</a></li>
+      <li><a href="domains.html">十大領域</a></li>
+      <li><a href="timeline.html">時間線</a></li>
+      <li><a href="map.html">人生地圖</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-toggle" id="themeToggle" title="切換深淺色">&#x2600;</button>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="core.html">核心主題</a></li>
+      <li><a href="gifts.html">天賦與陰影</a></li>
+      <li><a href="domains.html">十大領域</a></li>
+      <li><a href="timeline.html">時間線</a></li>
+      <li><a href="map.html">人生地圖</a></li>
+    </ul>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="main-content">
+      <div class="container">
+
+        <!-- Page Header -->
+        <div class="page-header reveal">
+          <div class="subtitle">CORE THEMES</div>
+          <h1>五大核心主題</h1>
+        </div>
+
+        <!-- ============ THEME 1: IDENTITY ============ -->
+        <div class="card reveal delay-1">
+          <div class="card-header">
+            <div class="card-icon">&#x2726;</div>
+            <div>
+              <div class="card-number">01</div>
+              <div class="card-title">身份 —— 「我係邊個」</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">太陽尊貴 1 分</span>
+            <span class="tag">日主己土孤立</span>
+            <span class="tag">次限太陽入水瓶</span>
+          </div>
+
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="id-astro">星盤依據</button>
+            <button class="tab-btn" data-tab="id-bazi">八字依據</button>
+            <button class="tab-btn" data-tab="id-real">你嘅現實</button>
+            <button class="tab-btn" data-tab="id-grow">成長方向</button>
+          </div>
+          <div class="tab-panels">
+            <div class="tab-panel active" data-panel="id-astro">
+              <p><strong>你嘅 ASC 係獅子 12°16'</strong> — 外在嘅你帶有獅子嘅特質：想被見到、想被肯定、有舞台感。但獅子嘅核心需求係「被欣賞」——你需要嘅唔係掌聲，而係「有人真正見到你係邊個」。</p>
+              <p class="mt-32"><strong>你嘅 ASC 宮主星太陽喺摩羯 6 宮，尊貴只有 1 分</strong>（全盤最低）— 你嘅「自我」由一粒全盤最弱嘅太陽掌管。就好似一個人揸住一架好靚嘅車（ASC 獅子）但引擎馬力唔夠（太陽 1 分）。外表睇落有氣勢，但內在嘅「我 OK」感唔穩。</p>
+              <p class="mt-32"><strong>你嘅次限太陽已經進入水瓶 15°49'</strong> — 你嘅身份認同正正經歷由「摩羯」到「水瓶」嘅轉變。由「傳統、責任、結構」轉向「獨立、創新、有自己一套」。呢個轉變大概喺你 22–23 歲左右開始，會持續幾年。</p>
+            </div>
+            <div class="tab-panel" data-panel="id-bazi">
+              <p><strong>你係己土日主——天干零印星零比劫</strong> — 你嘅日主孤立無援。你嘅「我」喺天干層面冇任何同伴同保護。就好似一個人企喺一片空地中間——四面都冇牆。</p>
+              <p class="mt-32"><strong>你嘅己土生喺丑月（冬月濕土）</strong> — 你嘅「土」嘅本質係凍冰嘅濕土——有形但冇溫度。你嘅存在感好強（土＝有份量），但溫暖感好弱（凍＋濕）。</p>
+              <p class="mt-32"><strong>你嘅食傷出現 5 次</strong> — 你嘅身份定義方式係「我識做咩」而唔係「我係咩」。食傷代替咗印星嘅角色——你用「不停產出」嚟證明自己存在。</p>
+            </div>
+            <div class="tab-panel" data-panel="id-real">
+              <p>你嘅自我價值好深咁同「識做嘢」綁定——考試通過你覺得自己 OK、被人欣賞你覺得自己 OK、做出成果你覺得自己 OK。</p>
+              <p class="mt-32">但一旦做唔到嘢（病咗、失敗、停低），你嘅「我 OK」感會即刻跌到谷底。你唔知道「唔做嘢嘅自己」都值得被愛。</p>
+            </div>
+            <div class="tab-panel" data-panel="id-grow">
+              <p><strong>由「我識做咩所以有價值」轉向「我存在就已經有價值」。</strong></p>
+              <p class="mt-32">次限太陽入水瓶會自然帶你行呢條路——但過程好慢。你要學識：你嘅價值唔係你嘅產出。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ THEME 2: CONSUMPTION ============ -->
+        <div class="card reveal delay-2">
+          <div class="card-header">
+            <div class="card-icon">&#x26A0;</div>
+            <div>
+              <div class="card-number">02</div>
+              <div class="card-title">消耗 —— 「點解我咁攰」</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">風象 35.7%</span>
+            <span class="tag">食傷 5 次</span>
+            <span class="tag">6 宮超重</span>
+            <span class="tag">固定大十字</span>
+          </div>
+
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="con-astro">星盤依據</button>
+            <button class="tab-btn" data-tab="con-bazi">八字依據</button>
+            <button class="tab-btn" data-tab="con-real">你嘅現實</button>
+            <button class="tab-btn" data-tab="con-grow">成長方向</button>
+          </div>
+          <div class="tab-panels">
+            <div class="tab-panel active" data-panel="con-astro">
+              <p><strong>你嘅風象能量佔全盤 35.7%（最強元素）</strong> — 思維型、理性、抽離。你嘅大腦好快、好分析、好全面——但同時好難停。</p>
+              <p class="mt-32"><strong>你嘅 6 宮超重（4 行星）＋12 條飛星 5 條入 6 宮</strong> — 全盤 40% 嘅能量被日常工作消耗。</p>
+              <p class="mt-32"><strong>你有一個固定大十字</strong>（水星、火星、木星、冥王星）— 你嘅思維被困喺一個「不停運轉但冇出口」嘅結構。</p>
+            </div>
+            <div class="tab-panel" data-panel="con-bazi">
+              <p><strong>你嘅食傷出現 5 次，佔十神 33%</strong> — 你嘅思維產出量係全盤最旺嘅十神。</p>
+              <p class="mt-32"><strong>你嘅巳酉丑組成三合金局</strong> — 將土（你嘅身體根基）不停轉化為金（食傷消耗）。呢個消耗唔係偶爾嘅——而係結構性嘅。</p>
+              <p class="mt-32"><strong>傷重身弱</strong> — 你嘅日主被持續掏空。就好似一塊濕土被不停抽取水分。</p>
+            </div>
+            <div class="tab-panel" data-panel="con-real">
+              <p>你嘅大腦 24/7 喺度運轉——分析、計劃、評估、優化。你知道應該停但停唔到。</p>
+              <p class="mt-32">你嘅疲勞唔係「瞓一覺就好返」嗰種——而係一種持續嘅、底層嘅「用緊好多」。</p>
+              <p class="mt-32">呢個消耗唔會喺短期內消失——因為呢個係你嘅命局本質。</p>
+            </div>
+            <div class="tab-panel" data-panel="con-grow">
+              <p><strong>你唔需要學「點樣唔攰」——你要學「點樣喺攰嘅狀態下仍然做緊想做嘅嘢」。</strong></p>
+              <p class="mt-32">食傷嘅「出口」係關鍵——教學、寫作、分享知識——將思維由「內耗」轉為「外化」。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ THEME 3: PROTECTION ============ -->
+        <div class="card reveal delay-3">
+          <div class="card-header">
+            <div class="card-icon">&#x2764;</div>
+            <div>
+              <div class="card-number">03</div>
+              <div class="card-title">保護 —— 「邊個照顧我」</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">偏印完全缺席</span>
+            <span class="tag">金星灼傷</span>
+            <span class="tag">木星曜升但逆行</span>
+          </div>
+
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="pro-astro">星盤依據</button>
+            <button class="tab-btn" data-tab="pro-bazi">八字依據</button>
+            <button class="tab-btn" data-tab="pro-real">你嘅現實</button>
+            <button class="tab-btn" data-tab="pro-grow">成長方向</button>
+          </div>
+          <div class="tab-panels">
+            <div class="tab-panel active" data-panel="pro-astro">
+              <p><strong>你嘅太陽尊貴只有 1 分</strong>（保護力弱）＋<strong>金星灼傷</strong>（接收愛嘅能力被壓）＋<strong>木星曜升但逆行</strong>（保護打折）。</p>
+              <p class="mt-32">你唯一嘅解壓通道：<strong>木星巨蟹 11 宮互溶月亮 5 宮</strong> — 群體歸屬感同情感需求之間有一個罕見嘅雙向通道。</p>
+            </div>
+            <div class="tab-panel" data-panel="pro-bazi">
+              <p><strong>你嘅偏印完全缺席</strong>（冇非正統保護者）＋<strong>正印丙火被三合壓</strong>（正統保護力不足）＋<strong>正官完全缺席</strong>（冇制度保護）。</p>
+              <p class="mt-32">三層保護全部失效。你嘅保護模式係：自己保護自己（食傷代替印星）。</p>
+            </div>
+            <div class="tab-panel" data-panel="pro-real">
+              <p>你嘅「唔好麻煩人」唔係禮貌——而係你嘅 default 模式。你唔問、唔講、唔求助。</p>
+              <p class="mt-32">你嘅安全感偏向「我有技能＋我有收入」而唔係「有人愛我」——因為前者你控制到，後者你控制唔到。</p>
+              <p class="mt-32">你成個人嘅運作方式就係：靠自己。</p>
+            </div>
+            <div class="tab-panel" data-panel="pro-grow">
+              <p><strong>接受「我需要人」唔係弱。</strong></p>
+              <p class="mt-32">太陽弧太陽合月亮正在幫你做呢一步——你嘅「自我」同「情感需求」開始對齊。呢個過程你自己未必感受到，但你喺人面前嘅「存在方式」已經慢慢唔同。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ THEME 4: TIME ============ -->
+        <div class="card reveal delay-4">
+          <div class="card-header">
+            <div class="card-icon">&#x231B;</div>
+            <div>
+              <div class="card-number">04</div>
+              <div class="card-title">時間 —— 「點解好事咁慢嚟」</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">土星 Rx 10 宮</span>
+            <span class="tag">MC 金牛</span>
+            <span class="tag">將星（時柱）</span>
+            <span class="tag">斗宿逆轉黑馬</span>
+          </div>
+
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="time-astro">星盤依據</button>
+            <button class="tab-btn" data-tab="time-bazi">八字依據</button>
+            <button class="tab-btn" data-tab="time-real">你嘅現實</button>
+            <button class="tab-btn" data-tab="time-grow">成長方向</button>
+          </div>
+          <div class="tab-panels">
+            <div class="tab-panel active" data-panel="time-astro">
+              <p><strong>土星 Rx 10 宮</strong>（事業慢但穩）。<strong>MC 金牛＋金星灼傷</strong>（物質安全感嘅獲得過程比一般人辛苦）。</p>
+              <p class="mt-32"><strong>將星喺你嘅時柱</strong>＝後半生發力。<strong>斗宿喺你嘅時柱</strong>＝逆轉黑馬。</p>
+            </div>
+            <div class="tab-panel" data-panel="time-bazi">
+              <p><strong>6 宮主飛 10 宮</strong>＝每日嘅工作建構你嘅事業，但過程好慢。</p>
+              <p class="mt-32">你嘅大運時間表：23–32 丁酉（有保護但有消耗）→ 33–42 丙申（正印到位）→ 43–52 乙未（殺印相生）→ 53–62 甲午（金神成器）。</p>
+            </div>
+            <div class="tab-panel" data-panel="time-real">
+              <p>你嘅事業曲線係一條慢上坡——前段最辛苦、中段開始穩、後段真正發力。</p>
+              <p class="mt-32">你 25–26 歲嘅考試同事業變動唔係「爆發」——而係「播種」。你做嘅每一件事都係為咗 33 歲之後嘅上升做準備。</p>
+            </div>
+            <div class="tab-panel" data-panel="time-grow">
+              <p><strong>你要記住兩件事：</strong></p>
+              <p class="mt-32">第一，你嘅事業時間表係「慢上坡」而唔係「平路」——每一步都係向上嘅，只係斜度唔大。</p>
+              <p class="mt-32">第二，2026–2027 係你呢步大運入面最有資源做嘢嘅窗口——唔好浪費。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ THEME 5: LOVE ============ -->
+        <div class="card reveal delay-5">
+          <div class="card-header">
+            <div class="card-icon">&#x2665;</div>
+            <div>
+              <div class="card-number">05</div>
+              <div class="card-title">愛 —— 「我點樣愛人同被人愛」</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">金星灼傷</span>
+            <span class="tag">正財缺席</span>
+            <span class="tag">日支卯酉沖</span>
+            <span class="tag">月亮合南交點</span>
+          </div>
+
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="love-astro">星盤依據</button>
+            <button class="tab-btn" data-tab="love-bazi">八字依據</button>
+            <button class="tab-btn" data-tab="love-real">你嘅現實</button>
+            <button class="tab-btn" data-tab="love-grow">成長方向</button>
+          </div>
+          <div class="tab-panels">
+            <div class="tab-panel active" data-panel="love-astro">
+              <p><strong>你嘅金星摩羯灼傷（距太陽 0°43'）</strong>＝接收愛嘅能力被自我意識遮蔽。就好似一個人有一個好靚嘅天線但被一層保鮮紙包住——信號收到但唔清晰。</p>
+              <p class="mt-32"><strong>DSC 水瓶＋天王星 7 宮</strong>＝你需要空間同獨立。<strong>日支卯被酉沖</strong>＝感情有動盪但代表「活」。</p>
+              <p class="mt-32"><strong>冥王星 4→5 飛星</strong>＝家庭模式會帶入戀愛。<strong>月亮合南交點</strong>＝你嘅情感模式帶有「舊」嘅特質——你會不停重複同一種 pattern。</p>
+            </div>
+            <div class="tab-panel" data-panel="love-bazi">
+              <p><strong>你嘅正財完全缺席</strong>＝冇穩定嘅「被愛」模式——唔係冇人愛你，係你嘅系統冇「接收頻道」。</p>
+              <p class="mt-32"><strong>你嘅日支藏乙木七殺帝旺</strong>＝你嘅配偶宮入面住住一個「壓力同成長催化劑」。你需要嘅伴侶唔止係「愛你」——而係「令你成長」嘅人。</p>
+              <p class="mt-32"><strong>比劫被化＋食傷代替表達</strong>＝你用「做嘢」而唔係「講嘢」嚟表達愛。你會默默做一些對方感受得到但未必知道係你做嘅嘢——呢個就係你嘅語言。</p>
+            </div>
+            <div class="tab-panel" data-panel="love-real">
+              <p><strong>你愛人嘅方式：</strong>幫人搞掂嘢、記住人哋鍾意啲咩、默默做一些人唔知道嘅嘢。你唔會講「我愛你」——你嘅愛全部藏喺行動入面。</p>
+              <p class="mt-32"><strong>你接收愛嘅方式：</strong>你唔知道點樣接收。語言上嘅關心你會覺得唔自在，但行動上嘅照顧你會慢慢收落。你嘅接收天線唔係壞咗——只係佢嘅頻道同一般人唔同。</p>
+            </div>
+            <div class="tab-panel" data-panel="love-grow">
+              <p><strong>由「做嘢就係愛」轉向「企喺度都係愛」。</strong></p>
+              <p class="mt-32">由「唔需要人」轉向「需要人但唔代表我唔獨立」。</p>
+              <p class="mt-32">太陽弧太陽合月亮正在幫你做呢一步——18 個月之後你嘅硬殼上面會多咗幾條裂縫，光可以透入。</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>人生地圖 · 五大核心主題</p>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

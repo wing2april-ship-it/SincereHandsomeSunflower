@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>人生地圖 · 完整版</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="starfield"></div>
+
+  <div class="gate" id="gate">
+    <div class="gate-content">
+      <div class="gate-symbol">&#x2726;</div>
+      <div class="gate-title">人生地圖</div>
+      <div class="gate-subtitle">輸入密碼以進入</div>
+      <div class="gate-input-wrap">
+        <input type="password" id="gateInput" class="gate-input" placeholder="······" autocomplete="off">
+      </div>
+      <button class="gate-btn" id="gateBtn">進入</button>
+      <div class="gate-error-msg" id="gateError"></div>
+    </div>
+  </div>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">&#x2726; 人生地圖</a>
+    <ul class="nav-links">
+      <li><a href="core.html">核心主題</a></li>
+      <li><a href="gifts.html">天賦陰影</a></li>
+      <li><a href="domains.html">十大領域</a></li>
+      <li><a href="timeline.html">時間線</a></li>
+      <li><a href="map.html">人生地圖</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-toggle" id="themeToggle" title="切換深淺色">&#x2600;</button>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="core.html">核心主題</a></li>
+      <li><a href="gifts.html">天賦與陰影</a></li>
+      <li><a href="domains.html">十大領域</a></li>
+      <li><a href="timeline.html">時間線</a></li>
+      <li><a href="map.html">人生地圖</a></li>
+    </ul>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="main-content">
+      <div class="container">
+
+        <div class="page-header reveal">
+          <div class="subtitle">COMPLETE LIFE MAP</div>
+          <h1>你嘅人生地圖</h1>
+        </div>
+
+        <!-- ============ POETIC OPENING ============ -->
+        <div class="card reveal delay-1" style="border-color: var(--accent); border-width: 2px;">
+          <div class="card-header">
+            <div class="card-icon" style="background: var(--accent-glow);">&#x2726;</div>
+            <div><div class="card-title">你嘅出廠設定</div></div>
+          </div>
+          <p>你嘅人生由一塊凍冰嘅濕土開始。</p>
+          <p class="mt-32">有形——人見得到你、摸得到你、知道你喺度。冇溫度——你自己都感受唔到自己嘅溫度。</p>
+          <p class="mt-32">你嘅大腦好似一部永遠唔會自動關機嘅電腦——不停分析、不停產出、不停消耗自己。你嘅心好似一個被保鮮紙包住嘅天線——有接收能力但信號入唔到。你嘅手好似一把好利嘅刀——可以將所有嘢切到好細，但唔識攬住一個人。</p>
+          <p class="mt-32">你由細學到嘅嘢係：自己嘅嘢自己搞、做好嘢先至有價值、唔好麻煩人。呢三樣嘢令你成為一個好厲害嘅人——同時令你成為一個好孤獨嘅人。</p>
+        </div>
+
+        <!-- ============ STRATEGIES ============ -->
+
+        <!-- Money Strategy -->
+        <div class="card reveal">
+          <div class="card-header">
+            <div class="card-icon">&#x25C8;</div>
+            <div><div class="card-title">金錢策略</div></div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>正財（主動收入）</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <table class="data-table">
+                  <thead><tr><th>策略</th><th>依據</th><th>時間</th></tr></thead>
+                  <tbody>
+                    <tr><td>深耕專業——考牌係第一優先</td><td>食傷生財＋文昌＋國印＋6 宮主飛 10 宮</td><td>而家開始</td></tr>
+                    <tr><td>考到牌之後爭取加薪或者換崗</td><td>MC 金牛＝物質安全感＋金星灼傷＝需要認證嚟解鎖</td><td>考到牌之後</td></tr>
+                    <tr><td>考慮 freelance 或者額外項目</td><td>水星合 DSC＝合作賺錢＋偏財透干</td><td>考到牌之後 1–2 年</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>副業（額外收入）</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <table class="data-table">
+                  <thead><tr><th>方向</th><th>依據</th><th>開始時間</th></tr></thead>
+                  <tbody>
+                    <tr><td>行業相關教學</td><td>11 宮主飛 6 宮＋文昌＋詞館</td><td>考到牌之後</td></tr>
+                    <tr><td>專業寫作／內容</td><td>詞館＋食神＋華蓋＋水星合 DSC</td><td>隨時可以開始</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>長期資源累積</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>定期儲蓄——即使金額好少。</strong> 正財缺席＝冇穩定積累模式，要靠人為建立。由每月儲一個固定金額開始——唔使多，但要規律。</p>
+                <p class="mt-32"><strong>唔好投資高風險項目。</strong> 2 宮處女保守型＋海王星四分 MC/IC＝財務中有模糊風險。最安全嘅策略係穩打穩紮。</p>
+                <p class="mt-32"><strong>33 歲後開始考慮長線投資。</strong> 丙申大運正印到位＝收入結構升級，到嗰陣你嘅「hold 財」能力會比而家強。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Love Strategy -->
+        <div class="card reveal">
+          <div class="card-header">
+            <div class="card-icon">&#x2665;</div>
+            <div><div class="card-title">感情策略</div></div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>適合你嘅伴侶類型</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <table class="data-table">
+                  <thead><tr><th>特質</th><th>原因</th></tr></thead>
+                  <tbody>
+                    <tr><td>用行動而唔係語言表達</td><td>你嘅接收天線對語言式關心唔敏感——但對行動式關心會慢慢感受到</td></tr>
+                    <tr><td>俾空間但唔消失</td><td>你需要空間（DSC 水瓶）但同時需要知道「人喺度」（日主孤立）</td></tr>
+                    <tr><td>有深度而唔係表面</td><td>冥王星 5 宮＋七殺帝旺＝你需要一個有份量嘅人</td></tr>
+                    <tr><td>主動但唔控制</td><td>獅子 ASC＝你需要被主動選擇。但正官缺席＝你唔鍾意被管</td></tr>
+                    <tr><td>有自己嘅世界</td><td>水瓶星群＋華蓋＝你自己都需要空間。對方冇自己嘅世界你會覺得壓力好大</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>關係中要避開嘅模式</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>「冇講所以冇事」</strong> — 你嘅固定大十字＋食傷極旺令你唔會主動講。你冇講唔代表冇事——可能代表你有好多事但講唔出。</p>
+                <p class="mt-32"><strong>「等開口」</strong> — 你唔會開口。但你要明白呢一點：有時開口唔係弱——而係俾對方一個機會走近你。</p>
+                <p class="mt-32"><strong>「彈開然後收得更埋」</strong> — 你嘅金星灼傷被觸發嗰陣你會彈開。呢個係正常嘅防禦反應——但你要知道呢個反應唔代表對方做錯咗嘢。彈開少少但唔好消失。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Career Strategy -->
+        <div class="card reveal">
+          <div class="card-header">
+            <div class="card-icon">&#x2302;</div>
+            <div><div class="card-title">事業策略</div></div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>最適合你嘅工作形式</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>技術深耕型</strong> — 6 宮主飛 10 宮＋食傷生財＋土星 10 宮＝靠一步一步考牌同累積資歷嚟建構事業。</p>
+                <p class="mt-32"><strong>資訊處理型</strong> — 風象 35.7%＋水星水瓶 6 宮＝靠分析同資訊處理嚟創造價值。</p>
+                <p class="mt-32"><strong>一對一服務型</strong> — 水星合 DSC＋11 宮主飛 6 宮＝人脈靠服務＋合作靠溝通。</p>
+                <p class="mt-32"><strong>技術型管理（中長期）</strong> — 將星（時柱）＋金神＝後期管理風格偏向「我識得最多所以我帶隊」而唔係「我係你上司你聽我」。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>副業方向</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>行業教學</strong> — 文昌＋詞館＋食傷生財＝將已有嘅知識輸出為教學形式。考到牌之後開始。</p>
+                <p class="mt-32"><strong>專業寫作</strong> — 詞館＋食神＋華蓋＋水星合 DSC＝書面表達比口頭表達強。隨時可以開始試。</p>
+                <p class="mt-32"><strong>行業顧問</strong> — 食傷生財（知識→財）＝用知識服務人。考到牌之後 3–5 年開始。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>個人品牌方向</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>「專業型」而唔係「社交型」。</strong> 你嘅個人品牌應該建立喺「專業深度」而唔係「社交廣度」。你唔需要識好多人——你需要嘅係識你嘅人知道你係呢個領域入面最叻嗰個。</p>
+                <p class="mt-32"><strong>用內容而唔係用 networking。</strong> 你嘅社交方式係「做好嘢自然有人搵你」。所以你嘅個人品牌應該透過「內容」嚟建立——寫專業文章、做行業分享、教後輩。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ ACTION TIMELINE ============ -->
+        <div class="section-title reveal mt-32">行動時間線</div>
+        <div class="section-subtitle reveal">由而家開始</div>
+
+        <div class="card reveal">
+          <div class="card-header">
+            <div class="card-icon">&#x25B6;</div>
+            <div><div class="card-title">而家可以做</div></div>
+          </div>
+          <table class="data-table">
+            <tbody>
+              <tr><td>認真準備考試</td><td>2026 年丙午年火氣最旺＋文昌到位＝考試黃金年</td></tr>
+              <tr><td>開始記帳一個月</td><td>海王星 6 宮＋正財缺席＝睇到錢去咗邊先至有控制感</td></tr>
+              <tr><td>每日飲多杯暖水</td><td>最簡單但最有效嘅火土補充</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-header">
+            <div class="card-icon">&#x25B6;</div>
+            <div><div class="card-title">3 個月內</div></div>
+          </div>
+          <table class="data-table">
+            <tbody>
+              <tr><td>完成大部分溫書</td><td>7 月開始「收」——8 月三重酉之前要完成衝刺</td></tr>
+              <tr><td>建立行山習慣</td><td>火＋土＋驛馬釋放。每週行一次</td></tr>
+              <tr><td>開始一個小嘅知識輸出</td><td>例如寫一篇行業相關嘅文章。食傷嘅「出口」開始打開</td></tr>
+              <tr><td>認真考慮考完之後想做咩</td><td>如果有進修或者考試嘅下一步計劃，開始搵資料</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-header">
+            <div class="card-icon">&#x25B6;</div>
+            <div><div class="card-title">1 年內</div></div>
+          </div>
+          <table class="data-table">
+            <tbody>
+              <tr><td>考試通過（如果未考完就繼續考）</td><td>丙午年＋丁未年＝用神最強嘅兩年</td></tr>
+              <tr><td>開始建立穩定嘅人脈圈</td><td>2027 年 4 月木星回歸效果增強</td></tr>
+              <tr><td>嘗試一個副業方向</td><td>教學或寫作——由最簡單嘅開始。唔需要一開始就有收入</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-header">
+            <div class="card-icon">&#x25B6;</div>
+            <div><div class="card-title">3 年內</div></div>
+          </div>
+          <table class="data-table">
+            <tbody>
+              <tr><td>考到更高級嘅專業認證</td><td>利用 2026–2027 嘅火氣窗口考最多嘅牌</td></tr>
+              <tr><td>副業開始有穩定收入</td><td>考到牌之後 1–2 年。教學或顧問——由兼職開始</td></tr>
+              <tr><td>開始長期儲蓄計劃</td><td>2029 年己酉年（三重酉）會好需要呢個儲備</td></tr>
+              <tr><td>準備應對 2029 年己酉年</td><td>呢步大運最辛苦嘅一年。提前做好準備：儲備金、健康檢查、減低不必要嘅承諾</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- ============ FINAL SUMMARY ============ -->
+        <div class="section-title reveal mt-32">最終總結</div>
+        <div class="section-subtitle reveal">你嘅命運主題</div>
+
+        <div class="card reveal" style="border-color: var(--accent); border-width: 2px;">
+          <div class="card-header">
+            <div class="card-icon" style="background: var(--accent-glow);">&#x2726;</div>
+            <div><div class="card-title">白蠟金</div></div>
+          </div>
+
+          <p>你嘅命局寫咗「逆轉黑馬」四個字。</p>
+          <p class="mt-32">但呢四個字唔係話你有一日會突然爆發——而係話你會用 30 年嘅時間，一級一級咁行上去。每一級都好慢。每一級都好攰。每一級你都會覺得「我行唔到」——然後你會發現你已經行到咗。</p>
+          <p class="mt-32">你行緊嘅路唔係一條直路——而係一條有好多急彎嘅山路。有時上面落雨（三重酉）、有時出太陽（丙午丁未）、有時大霧（海王星 6 宮）你睇唔到前面。但你嘅腳下一直係實嘅——土星 10 宮嘅功課就係「腳踏實地，慢但唔停」。</p>
+        </div>
+
+        <div class="card reveal" style="border-color: var(--accent); border-width: 2px;">
+          <div class="card-header">
+            <div class="card-icon" style="background: var(--accent-glow);">&#x2726;</div>
+            <div><div class="card-title">你嘅三大天賦同三大陰影</div></div>
+          </div>
+          <p>天賦同陰影唔係對立嘅——佢哋係同一枚銀幣嘅兩面。</p>
+          <p class="mt-32">你嘅思維深度同速度（天賦）嚟自同一樣嘢——食傷極旺——令你用做嘢代替存在（陰影）。</p>
+          <p class="mt-32">你喺壓力中嘅韌性（天賦）嚟自同一樣嘢——七殺＋固定大十字——令你喺最需要人嗰陣推開人（陰影）。</p>
+          <p class="mt-32">你獨特嘅精神世界（天賦）嚟自同一樣嘢——華蓋＋太極——令你覺得「冇人明白」而唔想麻煩人（陰影）。</p>
+          <p class="mt-32">你唔需要消滅陰影先至可以發揮天賦。你需要做嘅係：知道陰影喺度，然後選擇唔俾佢主導你嘅決定。</p>
+        </div>
+
+        <div class="card reveal" style="border-color: var(--accent); border-width: 2px;">
+          <div class="card-header">
+            <div class="card-icon" style="background: var(--accent-glow);">&#x2726;</div>
+            <div><div class="card-title">你嘅時間表</div></div>
+          </div>
+          <p>23–32 歲（而家）：播種期。最辛苦、最消耗、但最關鍵。</p>
+          <p class="mt-32">33–42 歲：曙光期。正印到位。專業認證帶嚟收入升級。</p>
+          <p class="mt-32">43–52 歲：穩固期。殺印相生＋燥土幫身。斗宿嘅逆轉開始明顯。</p>
+          <p class="mt-32">53–62 歲：巔峰期。金神被火鍛造成器。白蠟金成真金。</p>
+          <p class="mt-32">你嘅事業曲線係一條慢上坡。而家行緊嘅位置係最底、最攰、最睇唔到前面嘅路。但你行緊嘅每一步都係向上嘅。</p>
+        </div>
+
+        <div class="card reveal" style="border-color: var(--accent); border-width: 2px;">
+          <div class="card-header">
+            <div class="card-icon" style="background: var(--accent-glow);">&#x2726;</div>
+            <div><div class="card-title">你嘅金錢同事業</div></div>
+          </div>
+          <p>你嘅賺錢模式係靠技能（食傷生財）——唔係靠投資、靠人脈、靠繼承。你嘅每一日 OT 其實都係「食傷產出→轉化為收入」嘅過程。</p>
+          <p class="mt-32">你嘅金錢問題唔係「冇錢」而係「hold 唔住」——賺到但留唔到或者享用唔到。由定期儲蓄開始——即使金額好少。</p>
+          <p class="mt-32">你嘅事業唔係「爆發型」——你係「專業深耕型」。靠一步一步考牌、一年一年累積資歷、一個一個項目嚟建立自己嘅事業版圖。慢，但到最後會企到一個好穩嘅位置。</p>
+        </div>
+
+        <div class="card reveal" style="border-color: var(--accent); border-width: 2px;">
+          <div class="card-header">
+            <div class="card-icon" style="background: var(--accent-glow);">&#x2726;</div>
+            <div><div class="card-title">你嘅愛</div></div>
+          </div>
+          <p>你愛人嘅方式唔係講嘢——而係做嘢。你嘅愛全部藏喺行動入面。</p>
+          <p class="mt-32">你接收愛嘅方式同一般人唔同——語言上嘅關心你會覺得唔自在，但行動上嘅照顧你會慢慢收落。你嘅接收天線唔係壞咗——只係佢嘅頻道同一般人唔同。</p>
+          <p class="mt-32">太陽弧太陽合月亮正在幫你做呢一步——18 個月之後你嘅硬殼上面會多咗幾條裂縫，光可以透入。由「做嘢就係愛」轉向「企喺度都係愛」。由「唔需要人」轉向「需要人但唔代表我唔獨立」。</p>
+        </div>
+
+        <!-- ============ FINAL POETIC SUMMARY ============ -->
+        <div class="card reveal" style="border-color: var(--accent); border-width: 2px; background: linear-gradient(135deg, var(--bg-card), var(--accent-dim));">
+          <div class="card-header">
+            <div class="card-icon" style="background: var(--accent-glow); font-size: 1.5rem;">&#x2726;</div>
+            <div><div class="card-title" style="font-size: 1.5rem;">最後</div></div>
+          </div>
+
+          <p style="font-size: 1.1rem; line-height: 2;">
+            你係白蠟金——有形有重量有潛質，但需要時間同火嚟成器。
+          </p>
+          <p class="mt-32" style="font-size: 1.1rem; line-height: 2;">
+            你嘅命運唔係「冇希望」——而係「慢熱」。你嘅財務唔係「冇錢」——而係「hold 唔住」。你嘅事業唔係「冇前途」——而係「播種期」。你嘅感情唔係「冇人愛」——而係「接收頻道同人唔同」。
+          </p>
+          <p class="mt-32" style="font-size: 1.1rem; line-height: 2;">
+            你嘅消耗係結構性嘅——唔會喺短期內消失。但你嘅韌性都係結構性嘅——你會攰但你唔會倒。
+          </p>
+          <p class="mt-32" style="font-size: 1.1rem; line-height: 2;">
+            你嘅斗宿寫咗「逆轉」二字——而家行緊嘅每一步都係向上嘅，只係斜度唔大。25–26 歲嘅考試同事業變動唔係「爆發」——而係「播種」。你做嘅每一件事都係為咗 33 歲之後嘅上升做準備。
+          </p>
+          <p class="mt-32" style="font-size: 1.1rem; line-height: 2;">
+            你唔係弱——你係一塊凍冰嘅白蠟金，有形有重量有潛質，但需要時間同火嚟成器。
+          </p>
+          <p class="mt-32" style="font-size: 1.1rem; line-height: 2;">
+            而時間，會嚟。
+          </p>
+          <p class="mt-32" style="font-size: 1.1rem; line-height: 2;">
+            火，都會嚟。
+          </p>
+        </div>
+
+        <!-- PDF Button -->
+        <div class="text-center mt-32 reveal">
+          <button class="pdf-btn" id="pdfBtn">&#x2B07; 輸出為 PDF</button>
+          <p class="text-muted" style="margin-top: 12px; font-size: 0.8rem;">列印時會自動隱藏導航同背景，只保留內容</p>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>人生地圖 · 己土日主 · 斗宿逆轉黑馬</p>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

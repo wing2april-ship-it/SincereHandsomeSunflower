@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>十大領域 · 人生地圖</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="starfield"></div>
+
+  <div class="gate" id="gate">
+    <div class="gate-content">
+      <div class="gate-symbol">&#x2726;</div>
+      <div class="gate-title">人生地圖</div>
+      <div class="gate-subtitle">輸入密碼以進入</div>
+      <div class="gate-input-wrap">
+        <input type="password" id="gateInput" class="gate-input" placeholder="······" autocomplete="off">
+      </div>
+      <button class="gate-btn" id="gateBtn">進入</button>
+      <div class="gate-error-msg" id="gateError"></div>
+    </div>
+  </div>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">&#x2726; 人生地圖</a>
+    <ul class="nav-links">
+      <li><a href="core.html">核心主題</a></li>
+      <li><a href="gifts.html">天賦陰影</a></li>
+      <li><a href="domains.html">十大領域</a></li>
+      <li><a href="timeline.html">時間線</a></li>
+      <li><a href="map.html">人生地圖</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-toggle" id="themeToggle" title="切換深淺色">&#x2600;</button>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="core.html">核心主題</a></li>
+      <li><a href="gifts.html">天賦與陰影</a></li>
+      <li><a href="domains.html">十大領域</a></li>
+      <li><a href="timeline.html">時間線</a></li>
+      <li><a href="map.html">人生地圖</a></li>
+    </ul>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="main-content">
+      <div class="container">
+
+        <div class="page-header reveal">
+          <div class="subtitle">TEN LIFE DOMAINS</div>
+          <h1>十大人生領域</h1>
+        </div>
+
+        <!-- Quick Nav -->
+        <div class="tag-row reveal mb-32" style="justify-content: center;">
+          <a href="#d1" class="tag" style="cursor:pointer;">1 身份</a>
+          <a href="#d2" class="tag" style="cursor:pointer;">2 金錢</a>
+          <a href="#d3" class="tag" style="cursor:pointer;">3 愛情</a>
+          <a href="#d4" class="tag" style="cursor:pointer;">4 事業</a>
+          <a href="#d5" class="tag" style="cursor:pointer;">5 家庭</a>
+          <a href="#d6" class="tag" style="cursor:pointer;">6 健康</a>
+          <a href="#d7" class="tag" style="cursor:pointer;">7 社交</a>
+          <a href="#d8" class="tag" style="cursor:pointer;">8 學習</a>
+          <a href="#d9" class="tag" style="cursor:pointer;">9 靈性</a>
+          <a href="#d10" class="tag" style="cursor:pointer;">10 轉化</a>
+        </div>
+
+        <!-- ======================== DOMAIN 1 ======================== -->
+        <div id="d1" class="card reveal delay-1">
+          <div class="card-header">
+            <div class="card-icon">&#x2726;</div>
+            <div>
+              <div class="card-number">領域 01</div>
+              <div class="card-title">身份認同</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">ASC 獅子</span>
+            <span class="tag">太陽 1 分</span>
+            <span class="tag">日主己土孤立</span>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>星盤依據</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>ASC 獅子 12°16'</strong> — 外在想被見到、想被肯定。但 ASC 宮主星太陽摩羯 6 宮尊貴只有 1 分（全盤最低）——外表有氣勢，內在「我 OK」感唔穩。</p>
+                <p class="mt-32"><strong>太陽被金星（界）同火星（曜升）接納</strong> — 雖然太陽弱但有外援。你嘅自我價值可以透過「做事」（火星）同「被人欣賞」（金星）嚟慢慢建立。</p>
+                <p class="mt-32"><strong>次限太陽已經入水瓶 15°49'</strong> — 你嘅身份認同正經歷由「傳統責任」轉向「有自己一套」嘅轉變。呢個轉變大概喺你 22–23 歲開始。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>八字依據</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>日主己土——天干零印星零比劫</strong> — 日主孤立。你嘅「我」喺天干層面冇任何同伴同保護。</p>
+                <p class="mt-32"><strong>己土生丑月（冬月濕土）</strong> — 有形但冇溫度。你嘅存在感好強（土＝有份量），但溫暖感好弱（凍＋濕）。</p>
+                <p class="mt-32"><strong>食傷 5 次代替印星</strong> — 你嘅身份定義方式係「我識做咩」而唔係「我係咩」。你用「不停產出」嚟證明自己存在。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>現實建議</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>由「我識做咩所以有價值」轉向「我存在就已經有價值」。</strong></p>
+                <p class="mt-32">次限太陽入水瓶會自然帶你行呢條路——但過程好慢。你要學識：你嘅價值唔係你嘅產出。如果有一日你做唔到嘢（病咗、失敗、停低），你嘅「我 OK」感會跌——但呢個唔係事實，只係你嘅食傷喺度講嘢。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================== DOMAIN 2 ======================== -->
+        <div id="d2" class="card reveal delay-2">
+          <div class="card-header">
+            <div class="card-icon">&#x25C8;</div>
+            <div>
+              <div class="card-number">領域 02</div>
+              <div class="card-title">金錢與資源</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">2 宮主飛 6 宮</span>
+            <span class="tag">食傷生財</span>
+            <span class="tag">正財缺席</span>
+            <span class="tag">MC 金牛</span>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>星盤依據</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>2 宮處女——宮主星水星飛入 6 宮（水瓶 10°03'）</strong> — 賺錢方式＝靠日常技能同資訊處理。水星同時係 2 宮主同 11 宮主＝人脈同財務用同一把鎖匙開。</p>
+                <p class="mt-32"><strong>水星合 DSC（2°13'）</strong> — 財務同一對一嘅關係有直接關聯。你可能透過合作賺錢。</p>
+                <p class="mt-32"><strong>MC 金牛——宮主星金星灼傷</strong> — 事業目標帶有物質安全感嘅需求，但獲得過程比一般人辛苦。</p>
+                <p class="mt-32"><strong>海王星 6 宮四分 MC/IC</strong> — 日常開支中有「模糊性」——你可能唔知錢去咗邊。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>八字依據</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>偏財（癸水）透干時柱</strong> — 「非正統」嘅收入方式。你嘅收入可能唔止係固定月薪——可能有額外項目、合作收入、或者服務費。</p>
+                <p class="mt-32"><strong>正財（壬水）完全缺席</strong> — 冇「穩定積累」嘅本能模式。你嘅收入偏「活水」（食傷生財＝不停產出先至有）而唔係「水塘」（慢慢儲）。</p>
+                <p class="mt-32"><strong>日主己土身弱 hold 唔住偏財</strong> — 賺到但留唔到。就好似一個杯有個窿，水不停漏。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>現實建議</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <table class="data-table">
+                  <thead>
+                    <tr><th>策略</th><th>具體做法</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>技能型收入為主</td>
+                      <td>繼續深耕專業——每多一個牌、每多一年資歷，收入基礎就更加穩固</td>
+                    </tr>
+                    <tr>
+                      <td>發展副收入</td>
+                      <td>教學、寫專業文章、做顧問——用同一套技能但用唔同形式輸出。唔需要額外學新嘢</td>
+                    </tr>
+                    <tr>
+                      <td>定期儲蓄</td>
+                      <td>正財缺席＝冇穩定積累模式，要靠人為建立。由每月儲一個小金額開始——唔使多但要規律</td>
+                    </tr>
+                    <tr>
+                      <td>記帳一個月</td>
+                      <td>海王星 6 宮＋正財缺席＝開支模糊。記一次帳嘅目的唔係慳錢——而係「睇到」錢去咗邊</td>
+                    </tr>
+                    <tr>
+                      <td>唔好高風險投資</td>
+                      <td>2 宮處女保守型＋海王星四分 MC/IC＝財務中有模糊風險。最安全嘅策略係穩打穩紮</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================== DOMAIN 3 ======================== -->
+        <div id="d3" class="card reveal delay-3">
+          <div class="card-header">
+            <div class="card-icon">&#x2665;</div>
+            <div>
+              <div class="card-number">領域 03</div>
+              <div class="card-title">愛情與親密關係</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">金星灼傷</span>
+            <span class="tag">正財缺席</span>
+            <span class="tag">DSC 水瓶</span>
+            <span class="tag">日支卯酉沖</span>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>你嘅感情模式</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <table class="data-table">
+                  <thead>
+                    <tr><th>模式</th><th>星盤機制</th><th>八字機制</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>用「做」代替「講」</td>
+                      <td>金星灼傷＝語言表達唔到深層感受</td>
+                      <td>食傷極旺但正財缺席＝用產出代替表達</td>
+                    </tr>
+                    <tr>
+                      <td>距離感唔係唔愛</td>
+                      <td>DSC 水瓶＋天王星 7 宮＝需要空間</td>
+                      <td>比劫被化＋日主孤立＝獨處係你嘅 default</td>
+                    </tr>
+                    <tr>
+                      <td>接收唔到關心</td>
+                      <td>金星灼傷＝接收端被遮蔽</td>
+                      <td>正財缺席＝冇「被愛」嘅接收頻道</td>
+                    </tr>
+                    <tr>
+                      <td>戀愛中帶入家庭模式</td>
+                      <td>冥王星 4→5 飛星</td>
+                      <td>月柱華蓋＋太極＝成長環境塑造情感模式</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>你嘅盲點</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>你以為「做嘢」就係「愛」</strong> — 食傷生財模式令你覺得「我幫你搞掂嘢」等於「我愛你」。但有時對方需要嘅唔係你幫佢搞掂嘢——而係你企喺度。</p>
+                <p class="mt-32"><strong>你以為「唔需要人」係「獨立」</strong> — 水瓶星群＋比劫被化＝你好自然咁覺得自己一個人冇問題。但你嘅太陽弱＋日主孤立代表你其實好需要人——只係你唔識承認。</p>
+                <p class="mt-32"><strong>你以為「距離」等於「安全」</strong> — 日支被沖＋DSC 水瓶＝你會自然咁拉開距離。但距離帶嚟嘅安全感係假嘅——真正嘅安全感嚟自「有人喺度但我唔使驚」。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>適合你嘅伴侶類型</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <table class="data-table">
+                  <thead>
+                    <tr><th>特質</th><th>原因</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>用行動而唔係語言表達</td>
+                      <td>你嘅接收天線對語言式關心唔敏感——但對行動式關心會慢慢感受到</td>
+                    </tr>
+                    <tr>
+                      <td>俾空間但唔消失</td>
+                      <td>你需要空間（DSC 水瓶）但同時需要知道「人喺度」（日主孤立）</td>
+                    </tr>
+                    <tr>
+                      <td>有深度而唔係表面</td>
+                      <td>冥王星 5 宮＋七殺帝旺＝你需要一個有份量嘅人</td>
+                    </tr>
+                    <tr>
+                      <td>主動但唔控制</td>
+                      <td>獅子 ASC＝你需要被主動選擇。但正官缺席＝你唔鍾意被管</td>
+                    </tr>
+                    <tr>
+                      <td>有自己嘅世界</td>
+                      <td>水瓶星群＋華蓋＝你自己都需要空間。對方冇自己嘅世界你會覺得壓力好大</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>關係中要避開嘅模式</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>「佢冇講所以我冇事」</strong> — 你嘅固定大十字＋食傷極旺令你唔會主動講。你冇講唔代表冇事——可能代表你有好多事但講唔出。</p>
+                <p class="mt-32"><strong>「等佢開口」</strong> — 你唔會開口。你嘅伴侶要明白呢一點。但你自己都要明白：有時開口唔係弱——而係俾對方一個機會走近你。</p>
+                <p class="mt-32"><strong>「彈開然後收得更埋」</strong> — 你嘅金星灼傷被觸發嗰陣你會彈開。呢個係正常嘅防禦反應——但你要知道呢個反應唔代表對方做錯咗嘢。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================== DOMAIN 4 ======================== -->
+        <div id="d4" class="card reveal delay-4">
+          <div class="card-header">
+            <div class="card-icon">&#x2302;</div>
+            <div>
+              <div class="card-number">領域 04</div>
+              <div class="card-title">事業與副業</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">土星 Rx 10 宮</span>
+            <span class="tag">MC 金牛</span>
+            <span class="tag">6 宮主飛 10 宮</span>
+            <span class="tag">將星＋金神</span>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>事業底層架構</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>MC 金牛 9°53'</strong> — 你嘅事業目標＝「穩定、有形、可見嘅成就」。你嘅事業理想唔係做 CEO——而係「喺一個領域入面做到有份量、有口碑、被人尊重」。</p>
+                <p class="mt-32"><strong>10 宮主金星飛入 6 宮（灼傷）</strong> — 事業嘅守護星被壓。有才華但使唔出。你嘅事業發展比一般人辛苦，但唔代表冇發展。</p>
+                <p class="mt-32"><strong>土星 Rx 10 宮（雙子）</strong> — 事業慢但穩。你要靠自己慢慢建立——冇人幫你開路。</p>
+                <p class="mt-32"><strong>6 宮超重</strong> — 所有能量流向日常工作。12 條飛星 5 條入 6 宮＝你嘅所有人生議題都會變成工作。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>最適合你嘅方向</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <table class="data-table">
+                  <thead>
+                    <tr><th>方向</th><th>依據</th><th>時間</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>專業深耕</td>
+                      <td>6 宮主飛 10 宮＋食傷生財＋文昌＋國印＋學堂＋金神</td>
+                      <td>而家開始</td>
+                    </tr>
+                    <tr>
+                      <td>技術型管理</td>
+                      <td>將星（時柱）＋金神＋土星 10 宮</td>
+                      <td>33–43 歲開始轉</td>
+                    </tr>
+                    <tr>
+                      <td>行業教學</td>
+                      <td>6 宮超重＋11 宮主飛 6 宮＋文昌＋詞館</td>
+                      <td>考到牌之後</td>
+                    </tr>
+                    <tr>
+                      <td>專業寫作</td>
+                      <td>水星合 DSC＋海王星 6 宮＋詞館＋食神＋華蓋</td>
+                      <td>隨時可以開始副業</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>事業時間表</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">而家（20 出頭）</div>
+                    <div class="timeline-title">播種期</div>
+                    <div class="timeline-desc">打基礎——最辛苦、最消耗、但最關鍵。每日嘅工作都係事業嘅積累。</div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">33 歲後 · 丙申大運</div>
+                    <div class="timeline-title">曙光期</div>
+                    <div class="timeline-desc">正印到位——專業認證帶嚟收入升級。有人賞識、保護力增加。</div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">43 歲後 · 乙未大運</div>
+                    <div class="timeline-title">穩固期</div>
+                    <div class="timeline-desc">殺印相生＋燥土幫身。事業穩固，斗宿嘅逆轉開始明顯。</div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">53 歲後 · 甲午大運</div>
+                    <div class="timeline-title">巔峰期</div>
+                    <div class="timeline-desc">金神被火鍛造成器。正官＋火＝用神大到位。你嘅事業版圖完全展開。</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================== DOMAIN 5 ======================== -->
+        <div id="d5" class="card reveal delay-5">
+          <div class="card-header">
+            <div class="card-icon">&#x2302;</div>
+            <div>
+              <div class="card-number">領域 05</div>
+              <div class="card-title">家庭與原生模式</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">IC 天蠍</span>
+            <span class="tag">冥王星 4→5</span>
+            <span class="tag">月柱華蓋＋太極</span>
+            <span class="tag">三合金局化月令</span>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>你嘅家庭環境</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>IC 天蠍 9°53'</strong> — 你嘅家庭根源帶有「深度、秘密、轉化」嘅特質。你嘅屋企唔係「表面簡單」嗰種——入面有深度嘅嘢。</p>
+                <p class="mt-32"><strong>冥王星 4→5 飛星</strong> — 家庭能量飛入戀愛。你喺戀愛中會帶入家庭模式——你對伴侶嘅某啲反應其實係你對屋企人嘅反應嘅投射。</p>
+                <p class="mt-32"><strong>月柱丑帶華蓋＋太極貴人</strong> — 你嘅成長環境中有「智慧同孤獨」嘅元素。你屋企可能係一個重視技能同理性多過情感表達嘅環境。</p>
+                <p class="mt-32"><strong>巳酉丑三合金局化月令</strong> — 你嘅家庭能量被轉化為食傷——成長環境將「保護」轉化為「技能培養」。你屋企人愛你——但愛嘅方式偏向「教你識做嘢」而唔係「攬住你話冇事」。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>家庭帶俾你嘅深層影響</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>「識做嘢」比「識表達」重要</strong> — 你由細學到嘅嘢係：做好嘢就有讚，但表達情感就尷尬。結果你長大之後用「做嘢」嚟表達愛。</p>
+                <p class="mt-32"><strong>「獨立」係被訓練出嚟嘅</strong> — 華蓋令你享受獨處，但享受獨處同被迫獨處係兩回事。你細個可能係嗰種自己同自己玩嘅小朋友——唔係因為你唔想同人玩，而係你學到「自己搞掂」。</p>
+                <p class="mt-32"><strong>「唔好麻煩人」</strong> — 食神透干＝溫和、唔想爭、唔想影響人。呢個令你成為一個好識照顧人嘅人——但唔識被人照顧。</p>
+                <p class="mt-32"><strong>「安全感」定義偏實際</strong> — 你嘅安全感偏向「我有技能＋我有收入」而唔係「有人愛我」——因為前者你控制到，後者你控制唔到。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================== DOMAIN 6 ======================== -->
+        <div id="d6" class="card reveal">
+          <div class="card-header">
+            <div class="card-icon">&#x2695;</div>
+            <div>
+              <div class="card-number">領域 06</div>
+              <div class="card-title">健康與身體管理</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">寒濕偏弱體質</span>
+            <span class="tag">食傷洩身</span>
+            <span class="tag">三合金局消耗</span>
+            <span class="tag">調候需火</span>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>你嘅體質基調</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>日主己土生丑月（冬月濕土）＋身弱＋食傷洩身＋調候需火</strong> — 你嘅體質基調係「寒濕偏弱」。就好似一塊凍冰嘅濕土——有形但冇溫度，有根但被不停抽取。</p>
+                <p class="mt-32">你嘅健康問題唔係「有病」——而係「被消耗」。就好似一部車油缸唔大但引擎好大——行得郁但好快要用油。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>最需要注意嘅範圍（命理傾向）</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <table class="data-table">
+                  <thead>
+                    <tr><th>範圍</th><th>原因</th><th>可能嘅表現</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>脾胃消化</td>
+                      <td>己土身弱＝脾土本弱＋冬月濕土＝寒濕困脾</td>
+                      <td>容易胃脹、消化慢、食慾唔穩定</td>
+                    </tr>
+                    <tr>
+                      <td>肝膽</td>
+                      <td>卯木（七殺帝旺）被酉金沖＝木被金克</td>
+                      <td>容易眼乾、情緒鬱結、凌晨 1–3 點容易醒</td>
+                    </tr>
+                    <tr>
+                      <td>精神健康</td>
+                      <td>食傷極旺＋傷重身弱＋酉酉自刑</td>
+                      <td>失眠、多夢、停唔到諗嘢、專注力下降</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="mt-32" style="font-size:0.85rem; color: var(--text-muted);">以上只係命理傾向分析，唔係醫學診斷。如有身體不適請諮詢醫生。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>生活建議（五行角度）</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <table class="data-table">
+                  <thead>
+                    <tr><th>範圍</th><th>建議</th><th>五行邏輯</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>飲食</td>
+                      <td>偏暖食：南瓜、粟米、番薯；薑、胡椒；烤肉、火鍋。戒凍飲同生冷食物</td>
+                      <td>火＋土＝調候用神</td>
+                    </tr>
+                    <tr>
+                      <td>着衫顏色</td>
+                      <td>慢慢引入啡色、橙色、暗紅色</td>
+                      <td>土＋火＝喜用神</td>
+                    </tr>
+                    <tr>
+                      <td>運動</td>
+                      <td>最建議行山；瑜伽。游泳唔建議太多</td>
+                      <td>火＋土運動最補；水＝忌神</td>
+                    </tr>
+                    <tr>
+                      <td>睡眠</td>
+                      <td>瞓前 1 小時減少螢幕。暖光燈、減少冷氣直吹</td>
+                      <td>金氣（酉）令夜晚個腦特別活躍</td>
+                    </tr>
+                    <tr>
+                      <td>精神消耗</td>
+                      <td>應對方法由「減少用腦」入手而唔係「訓多啲」</td>
+                      <td>食傷旺＝結構性消耗，要從源頭減</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================== DOMAIN 7 ======================== -->
+        <div id="d7" class="card reveal">
+          <div class="card-header">
+            <div class="card-icon">&#x2B23;</div>
+            <div>
+              <div class="card-number">領域 07</div>
+              <div class="card-title">社交與貴人</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">木星巨蟹 11 宮曜升</span>
+            <span class="tag">11 宮主飛 6 宮</span>
+            <span class="tag">比劫被化</span>
+            <span class="tag">偏印缺席</span>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>你嘅社交模式</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>你唔係冇朋友——你係朋友唔多但每個都好深。</strong> 木星巨蟹 11 宮＝你嘅群體歸屬感帶有「家庭」特質。你唔需要一百個朋友——你需要三五個「好似屋企人」嘅人。</p>
+                <p class="mt-32"><strong>你嘅貴人來自「做嘢」而唔係「識人」。</strong> 11 宮主飛 6 宮＝人脈靠服務。你嘅貴人可能係你服務過嘅客戶、你帶過嘅後輩、或者喺工作中認識嘅同行。</p>
+                <p class="mt-32"><strong>你嘅社交方式係「做好嘢自然有人搵你」。</strong> 你唔係社交高手——你係「做好嘢之後自然有人搵你」嗰種。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>你嘅貴人喺邊度</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p>木星巨蟹曜升代表你嘅貴人來自「滋養型」嘅群體——可能係一啲有溫度嘅圈子、家庭式嘅組織、或者同「照顧人」有關嘅社群。</p>
+                <p class="mt-32">木星互溶月亮代表你嘅人脈唔係「有用嘅人」——而係「令你有歸屬感嘅人」。你需要嘅唔係一堆 connections——你需要嘅係幾個真正連接到你嘅人。</p>
+                <p class="mt-32">但木星逆行代表呢啲歸屬感唔會自己送上門——你需要主動走出去。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================== DOMAIN 8 ======================== -->
+        <div id="d8" class="card reveal">
+          <div class="card-header">
+            <div class="card-icon">&#x270E;</div>
+            <div>
+              <div class="card-number">領域 08</div>
+              <div class="card-title">學習與表達</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">風象 35.7%</span>
+            <span class="tag">水星水瓶合 DSC</span>
+            <span class="tag">文昌＋詞館＋學堂</span>
+            <span class="tag">固定大十字</span>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>你嘅學習特質</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>你學嘢好快但消化好慢。</strong> 水星水瓶＝接收速度快，但食傷極旺＝你會不停分析學到嘅嘢，分析到好深好耐先至覺得「學完」。</p>
+                <p class="mt-32"><strong>你嘅學習方式係「做」而唔係「聽」。</strong> 食傷＝產出型學習。你聽十次唔及你自己做一次。</p>
+                <p class="mt-32"><strong>你嘅表達方式係「寫」好過「講」。</strong> 水星水瓶＋詞館＋文昌＝書面表達比口頭表達強。你可能寫嘅時候好有條理，但講嘅時候突然跳嚟跳去。</p>
+                <p class="mt-32"><strong>你需要「停」嘅時候但停唔到。</strong> 固定大十字＋食傷極旺＝你嘅大腦 24/7 喺度運轉。你知道應該停但停唔到——呢個唔係意志力問題，而係結構性問題。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>你嘅考試運</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>文昌＋國印＋學堂</strong> — 你嘅考試能力極強。呢三個神煞同時出現代表你天生利考試、利專業認證、利進修。</p>
+                <p class="mt-32"><strong>2026 丙午年</strong> ＝考試黃金年。丙火正印到位＝學習保護力最強。2026 年 5 月甲午月係溫書效率最高嘅月份。</p>
+                <p class="mt-32"><strong>最佳策略：</strong>喺火氣旺嘅月份（5–6 月）衝刺溫書，喺金氣旺嘅月份（8 月）只做複習同 past paper——唔好喺嗰個月學新嘢。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================== DOMAIN 9 ======================== -->
+        <div id="d9" class="card reveal">
+          <div class="card-header">
+            <div class="card-icon">&#x2727;</div>
+            <div>
+              <div class="card-number">領域 09</div>
+              <div class="card-title">靈性與人生信念</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">童子</span>
+            <span class="tag">華蓋＋太極貴人</span>
+            <span class="tag">木星巨蟹曜升</span>
+            <span class="tag">月亮合南交點</span>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>你嘅靈性特質</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>你嘅靈魂年齡比你嘅肉身年齡大。</strong> 童子＋華蓋＋太極＋斗宿——四個系統同時指向同一種靈性特質。你嘅精神世界、思考深度、獨處能力全部超越你嘅實際年齡。</p>
+                <p class="mt-32"><strong>你對神秘學有天然 connection。</strong> 華蓋＋太極貴人＋童子＝你天生對陰陽、宇宙法則、事物嘅本質有直覺。但食傷極旺會令你用「理性」嚟分析呢啲嘢——你會覺得「我只係覺得有趣」而唔承認你其實「感受到」咗嘢。</p>
+                <p class="mt-32"><strong>你嘅信念系統正在重建中。</strong> 木星曜升但逆行＋太陽弧太陽合月亮＝你嘅信念喺呢幾年會經歷一次「重新校準」。你之前嘅信念可能係「我要靠自己」——而家慢慢開始接受「我需要人」。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======================== DOMAIN 10 ======================== -->
+        <div id="d10" class="card reveal">
+          <div class="card-header">
+            <div class="card-icon">&#x2604;</div>
+            <div>
+              <div class="card-number">領域 10</div>
+              <div class="card-title">深層轉化與人生課題</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">冥王星 5 宮</span>
+            <span class="tag">火星 8 宮尊貴 6 分</span>
+            <span class="tag">金神需要火</span>
+            <span class="tag">斗宿逆轉黑馬</span>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>你嘅四大人生課題</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+
+                <p><strong>課題一：由「一個人」到「接受有人」</strong></p>
+                <p>你嘅 12 宮主月亮合南交點＝舊模式係「一個人」。比劫被化＋偏印缺席＝冇同伴冇保護者。你要接受「我需要人」唔係弱——而係人之常情。</p>
+
+                <p class="mt-32"><strong>課題二：由「不停產出」到「停得落」</strong></p>
+                <p>風象 35.7%＋固定大十字＋食傷 5 次＝你嘅思維被困住不停運轉。你要學識「唔做嘢」唔等於「冇價值」。</p>
+
+                <p class="mt-32"><strong>課題三：由「被消耗」到「被鍛造」</strong></p>
+                <p>6 宮黑洞＋太陽弱＝持續被消耗。但金神需要火＝白蠟金需要火鍛造。你嘅消耗唔係「白白辛苦」——而係「鍛造」嘅過程。</p>
+
+                <p class="mt-32"><strong>課題四：由「家庭模式」到「自己嘅模式」</strong></p>
+                <p>IC 天蠍＋冥王星 4→5＝家庭能量飛入戀愛。你要分辨「呢個想法係我嘅定係屋企人嘅」。建立你自己嘅模式——而唔係不停重複舊嘅。</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>課題嘅時間線</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">而家</div>
+                    <div class="timeline-title">課題一＋二</div>
+                    <div class="timeline-desc">接受有人＋停得落。太陽弧太陽合月亮正在幫你做呢一步。</div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">33 歲後</div>
+                    <div class="timeline-title">課題三</div>
+                    <div class="timeline-desc">被消耗轉為被鍛造。丙申大運正印到位＝保護力增加。</div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">43 歲後</div>
+                    <div class="timeline-title">課題四</div>
+                    <div class="timeline-desc">脫離家庭模式建立自己嘅模式。乙未大運丑未六沖撼動三合金局。</div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">53 歲後</div>
+                    <div class="timeline-title">全部課題嘅收成</div>
+                    <div class="timeline-desc">甲午大運金神成器。白蠟金被火鍛造成真金。斗宿逆轉完成。</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ OVERVIEW TABLE ============ -->
+        <div class="card reveal mt-32">
+          <div class="card-header">
+            <div class="card-icon">&#x2726;</div>
+            <div>
+              <div class="card-title">十大領域總覽</div>
+            </div>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr><th>領域</th><th>核心一句</th><th>時間表</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>身份認同</td><td>唔係天生成形——後天建構中</td><td>次限太陽入水瓶＝呢幾年正在轉變</td></tr>
+              <tr><td>金錢</td><td>靠技能、偏波動、需要學習被動收入</td><td>33 歲後收入結構升級</td></tr>
+              <tr><td>愛情</td><td>用做代替講、接收頻道同人唔同</td><td>太陽弧令你慢慢打開</td></tr>
+              <tr><td>事業</td><td>慢上坡——而家係播種期</td><td>33 歲後開始見曙光</td></tr>
+              <tr><td>家庭</td><td>有愛但表達方式唔匹配</td><td>冥王星 4→5 令家庭模式喺戀愛中浮現</td></tr>
+              <tr><td>健康</td><td>寒濕偏弱——被消耗而非有病</td><td>持續管理火土補充</td></tr>
+              <tr><td>社交</td><td>朋友唔多但深、人脈靠服務</td><td>木星回歸＝人脈重新激活</td></tr>
+              <tr><td>學習</td><td>學得快消化慢、停唔到</td><td>文昌＋詞館＝考試能力極強</td></tr>
+              <tr><td>靈性</td><td>靈魂年齡比肉身大</td><td>華蓋＋太極＋童子</td></tr>
+              <tr><td>深層轉化</td><td>由消耗到被鍛造</td><td>斗宿逆轉黑馬＝一生嘅主題</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>人生地圖 · 十大人生領域</p>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

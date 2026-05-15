@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天賦與陰影 · 人生地圖</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="starfield"></div>
+
+  <div class="gate" id="gate">
+    <div class="gate-content">
+      <div class="gate-symbol">&#x2726;</div>
+      <div class="gate-title">人生地圖</div>
+      <div class="gate-subtitle">輸入密碼以進入</div>
+      <div class="gate-input-wrap">
+        <input type="password" id="gateInput" class="gate-input" placeholder="······" autocomplete="off">
+      </div>
+      <button class="gate-btn" id="gateBtn">進入</button>
+      <div class="gate-error-msg" id="gateError"></div>
+    </div>
+  </div>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">&#x2726; 人生地圖</a>
+    <ul class="nav-links">
+      <li><a href="core.html">核心主題</a></li>
+      <li><a href="gifts.html">天賦陰影</a></li>
+      <li><a href="domains.html">十大領域</a></li>
+      <li><a href="timeline.html">時間線</a></li>
+      <li><a href="map.html">人生地圖</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-toggle" id="themeToggle" title="切換深淺色">&#x2600;</button>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="core.html">核心主題</a></li>
+      <li><a href="gifts.html">天賦與陰影</a></li>
+      <li><a href="domains.html">十大領域</a></li>
+      <li><a href="timeline.html">時間線</a></li>
+      <li><a href="map.html">人生地圖</a></li>
+    </ul>
+  </div>
+
+  <div class="page-wrapper">
+    <main class="main-content">
+      <div class="container">
+
+        <div class="page-header reveal">
+          <div class="subtitle">GIFTS &amp; SHADOWS</div>
+          <h1>天賦與陰影</h1>
+        </div>
+
+        <!-- ============ SECTION: GIFTS ============ -->
+        <div class="section-title reveal">三大天賦</div>
+        <div class="section-subtitle reveal">你最值得發展嘅能力</div>
+
+        <!-- Gift 1 -->
+        <div class="card reveal delay-1">
+          <div class="card-header">
+            <div class="card-icon">&#x269B;</div>
+            <div>
+              <div class="card-number">天賦 01</div>
+              <div class="card-title">思維嘅深度同速度</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">風象 35.7%</span>
+            <span class="tag">食傷 5 次</span>
+            <span class="tag">水星水瓶合 DSC</span>
+            <span class="tag">文昌＋詞館＋學堂</span>
+          </div>
+
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="g1-source">來源</button>
+            <button class="tab-btn" data-tab="g1-real">你嘅體驗</button>
+            <button class="tab-btn" data-tab="g1-grow">點樣發展</button>
+          </div>
+          <div class="tab-panels">
+            <div class="tab-panel active" data-panel="g1-source">
+              <p><strong>星盤：</strong>風象 35.7%（最強元素）＋水星水瓶 10°03'（6 宮）合 DSC。水星嘅位置代表你嘅思維帶有水瓶特質：前衛、有創意、唔跟傳統。合 DSC 代表你嘅溝通能力好強——但前提係一對一。</p>
+              <p class="mt-32"><strong>八字：</strong>食傷 5 次（辛金×2 透干＋酉金＋庚金＋辛金藏支）＝思維產出量佔全盤 33%。文昌＋詞館＋學堂同時出現——學習能力極強，尤其利考試、利書面表達、利語言類嘅學習。</p>
+            </div>
+            <div class="tab-panel" data-panel="g1-real">
+              <p>你嘅大腦好似一部 CPU 好快嘅電腦——接收速度快、分析能力強、可以同時處理多個資訊來源。</p>
+              <p class="mt-32">你學嘢好快，但同時你會不停分析學到嘅嘢，分析到好深好耐先至覺得「學完」。你嘅學習方式係「做」而唔係「聽」——你聽十次唔及你自己做一次。</p>
+              <p class="mt-32">你嘅表達方式係「寫」好過「講」——你可能寫嘅時候好有條理，但講嘅時候突然跳嚟跳去。</p>
+            </div>
+            <div class="tab-panel" data-panel="g1-grow">
+              <p><strong>呢個天賦唔需要額外培養——你已經有。你要做嘅係「channel」。</strong></p>
+              <p class="mt-32">將思維由「內耗」轉為「外化」——教學、寫作、專業分享。食傷嘅出口就係「產出俾人睇」而唔係「產出留喺自己腦入面」。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gift 2 -->
+        <div class="card reveal delay-2">
+          <div class="card-header">
+            <div class="card-icon">&#x2618;</div>
+            <div>
+              <div class="card-number">天賦 02</div>
+              <div class="card-title">喺壓力中成長嘅韌性</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">火星尊貴 6 分</span>
+            <span class="tag">七殺帝旺</span>
+            <span class="tag">斗宿逆轉黑馬</span>
+            <span class="tag">金神</span>
+          </div>
+
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="g2-source">來源</button>
+            <button class="tab-btn" data-tab="g2-real">你嘅體驗</button>
+            <button class="tab-btn" data-tab="g2-grow">點樣發展</button>
+          </div>
+          <div class="tab-panels">
+            <div class="tab-panel active" data-panel="g2-source">
+              <p><strong>星盤：</strong>火星雙魚 8 宮尊貴 6 分——全盤先天尊貴最高嘅行星。8 宮代表深層轉化，雙魚代表柔軟但有韌性。你嘅深層生命力比你自己以為嘅強得多。</p>
+              <p class="mt-32"><strong>八字：</strong>七殺乙木喺日支卯中帝旺——你嘅壓力源頭就喺你嘅「身體」同「配偶宮」。但帝旺代表力量——你唔係被壓力壓扁嗰種人，你係被壓力「壓出嚟」嗰種人。</p>
+              <p class="mt-32"><strong>星宿：</strong>斗宿嘅特質就係「喺逆境中慢慢行到前面」——你唔係爆發型嘅選手，你係馬拉松型嘅選手。</p>
+            </div>
+            <div class="tab-panel" data-panel="g2-real">
+              <p>你表面睇落好攰，但底層好韌。你捱到嘅嘢比一般人多——只係你捱嗰陣唔會呻，所以冇人知道你捱緊。</p>
+              <p class="mt-32">每次你覺得「我頂唔住」嘅時候，你最後都頂住咗。呢個唔係偶然——呢個係你嘅命局寫低咗嘅特質。</p>
+            </div>
+            <div class="tab-panel" data-panel="g2-grow">
+              <p><strong>你唔需要學「堅強」——你已經好堅強。</strong></p>
+              <p class="mt-32">你要學嘅係「唔好將堅強變成自我封閉」。有時接受人嘅幫助唔係弱——而係更聰明嘅堅強。一個人行 100 公里你行得到，但有人陪行你會行得快啲同開心啲。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gift 3 -->
+        <div class="card reveal delay-3">
+          <div class="card-header">
+            <div class="card-icon">&#x2727;</div>
+            <div>
+              <div class="card-number">天賦 03</div>
+              <div class="card-title">獨特嘅精神世界</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">華蓋＋太極貴人</span>
+            <span class="tag">童子</span>
+            <span class="tag">木星巨蟹曜升</span>
+            <span class="tag">海王星 6 宮</span>
+          </div>
+
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="g3-source">來源</button>
+            <button class="tab-btn" data-tab="g3-real">你嘅體驗</button>
+            <button class="tab-btn" data-tab="g3-grow">點樣發展</button>
+          </div>
+          <div class="tab-panels">
+            <div class="tab-panel active" data-panel="g3-source">
+              <p><strong>星盤：</strong>木星巨蟹 11 宮曜升互溶月亮 5 宮——你嘅信念系統帶有「巨蟹」特質：溫暖、滋養、保護。海王星 6 宮代表你嘅日常工作中帶有「靈性」嘅特質——你做嘢嗰陣偶爾會有「突然明白咗」嘅 moment。</p>
+              <p class="mt-32"><strong>八字：</strong>華蓋＋太極貴人（月柱丑）＋童子（日柱卯）——三個靈性標記同時出現。你天生對事物嘅本質有直覺——可能你會突然「知道」一件事但講唔出點解知道。</p>
+            </div>
+            <div class="tab-panel" data-panel="g3-real">
+              <p>你嘅精神世界比一般人深幾層。你可能對神秘學、哲學、或者靈性有天然嘅 connection——但你會用「理性」嚟包裝你嘅直覺。你會覺得「我只係覺得有趣」而唔承認你其實「感受到」咗嘢。</p>
+              <p class="mt-32">你嘅靈魂年齡比你嘅肉身年齡大——你嘅精神世界、思考深度、獨處能力全部超越你嘅實際年齡。呢個就係人哋覺得你好「沉穩」嘅原因。</p>
+            </div>
+            <div class="tab-panel" data-panel="g3-grow">
+              <p><strong>唔需要特別發展——只需要「唔好壓制」。</strong></p>
+              <p class="mt-32">食傷極旺會令你用理性分析你嘅直覺——有時分析完就失去咗原本嘅 insight。你要學識「feel 到就 feel 到，唔使分析點解 feel 到」。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ SECTION: SHADOWS ============ -->
+        <div class="section-title reveal mt-32">三大陰影</div>
+        <div class="section-subtitle reveal">最容易反覆跌入嘅模式</div>
+
+        <!-- Shadow 1 -->
+        <div class="card reveal delay-1">
+          <div class="card-header">
+            <div class="card-icon">&#x2620;</div>
+            <div>
+              <div class="card-number">陰影 01</div>
+              <div class="card-title">用「做嘢」代替「存在」</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">食傷代替印星</span>
+            <span class="tag">6 宮黑洞</span>
+            <span class="tag">太陽尊貴 1 分</span>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>呢個陰影點樣影響你</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p>你覺得自己冇價值嘅時候會即刻去做嘢——加班、溫書、幫人搞掂嘢、做運動。你嘅食傷模式令你覺得「我做緊嘢就代表我有價值」。</p>
+                <p class="mt-32">結果係你永遠停唔到——因為一停低就覺得冇價值。你嘅大腦 24/7 喺度運轉唔係因為你勤力——而係因為你驚停低。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>呢個陰影嘅根源</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>星盤：</strong>太陽尊貴 1 分＝「我 OK」感本來就弱。6 宮超重＝所有能量流向工作。你嘅自我價值同「產出」深度綁定。</p>
+                <p class="mt-32"><strong>八字：</strong>食傷代替咗印星嘅角色＝你用「不停產出」嚟代替「被保護」嘅感覺。印星缺席代表你細個冇得到足夠嘅「你已經好好」嘅肯定——所以你長大之後要自己不停咁「做」嚟證明自己。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>點樣處理</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>由小事開始。</strong></p>
+                <p class="mt-32">今日坐喺度 5 分鐘冇做嘢——已經係進步。慢慢建立一個「唔做嘢都 OK」嘅空間。呢個空間唔係一次過建立——而係每次多 5 分鐘。</p>
+                <p class="mt-32">下次你停低嗰陣覺得不安——問自己：「如果我而家咩都唔做，我仲係咪我？」答案永遠係「係」。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shadow 2 -->
+        <div class="card reveal delay-2">
+          <div class="card-header">
+            <div class="card-icon">&#x2620;</div>
+            <div>
+              <div class="card-number">陰影 02</div>
+              <div class="card-title">「唔好麻煩人」</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">食神透干</span>
+            <span class="tag">海王星對分 ASC</span>
+            <span class="tag">固定大十字</span>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>呢個陰影點樣影響你</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p>你唔問、唔講、唔求助。你覺得「自己嘅嘢自己搞」先至係對嘅。你寧願自己一個人做到半夜都唔會打電話搵人幫手。</p>
+                <p class="mt-32">結果係你一個人扛晒——包括啲你唔需要一個人扛嘅嘢。你以為呢個叫獨立，但其實呢個叫孤獨。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>呢個陰影嘅根源</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>星盤：</strong>海王星對分 ASC＝你感受得到「如果我問人會唔會麻煩到人」。固定大十字＝唔想改變人哋嘅節奏。結果係你唔問。</p>
+                <p class="mt-32"><strong>八字：</strong>食神透干年月＝溫和、唔想爭、唔想影響人。食傷代替印星＝自己教自己而唔係問人。呢個模式你由細就有——你細個可能係嗰種「唔識就自己研究」嘅小朋友。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>點樣處理</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>由小事開始開口。</strong></p>
+                <p class="mt-32">「幫我攞杯水」、「你覺得呢件衫好唔好睇」——呢啲唔係麻煩人，呢啲係正常嘅人際互動。你每次開口問一個問題都係喺打破你嘅固定大十字。</p>
+                <p class="mt-32">記住：真正嘅獨立係「可以一個人但唔需要一個人」，而唔係「唔識同一個人一齊」。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shadow 3 -->
+        <div class="card reveal delay-3">
+          <div class="card-header">
+            <div class="card-icon">&#x2620;</div>
+            <div>
+              <div class="card-number">陰影 03</div>
+              <div class="card-title">喺最需要人嗰陣推開人</div>
+            </div>
+          </div>
+
+          <div class="tag-row">
+            <span class="tag">固定大十字</span>
+            <span class="tag">金星灼傷</span>
+            <span class="tag">食傷極旺</span>
+            <span class="tag">日支被沖</span>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>呢個陰影點樣影響你</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p>你越攰越封閉、越封閉越唔出聲、越唔出聲人越唔知你需要咩。你嘅防禦機制喺最需要幫助嗰陣反而最強。</p>
+                <p class="mt-32">你會用「冇嘢」嚟回答所有問題——但「冇嘢」其實係「好多嘢但我講唔出」。人見到你「冇嘢」就真係以為你冇事——然後退後。你見到人退後就更加覺得「冇人理我」——然後更加封閉。呢個係一個惡性循環。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>呢個陰影嘅根源</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>星盤：</strong>固定大十字＝抗拒改變、唔釋放。金星灼傷＝接收同表達愛嘅能力同時被壓。日支被酉沖＝配偶宮有動盪——你喺親密關係中特別容易觸發防禦。</p>
+                <p class="mt-32"><strong>八字：</strong>食神制殺太過＝所有外來壓力被你嘅食傷消化。你唔會「反抗」壓力——你會「分析」壓力。結果係壓力冇消失，只係被轉化為思維消耗。你需要人嗰陣，你嘅食傷會自動分析「如果我講出嚟會點」——分析完你就決定唔講。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="expandable">
+            <button class="expandable-trigger">
+              <span>點樣處理</span>
+              <span class="chevron">&#x25BC;</span>
+            </button>
+            <div class="expandable-content">
+              <div class="expandable-inner">
+                <p><strong>你要記住一件事：「需要人」唔等於「唔獨立」。</strong></p>
+                <p class="mt-32">獨立同連結唔矛盾。一個真正獨立嘅人係「可以一個人但唔需要一個人」，而唔係「唔識同人一齊」。</p>
+                <p class="mt-32">下次你覺得攰到想推開人嗰陣——唔使講「我需要你」（你講唔出口），你只需要做一件事：<strong>唔好消失。</strong>留喺度就得。由人靠近你。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ SUMMARY ============ -->
+        <div class="card reveal mt-32">
+          <div class="card-header">
+            <div class="card-icon">&#x2726;</div>
+            <div>
+              <div class="card-title">天賦同陰影嘅關係</div>
+            </div>
+          </div>
+
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>天賦</th>
+                <th>陰影</th>
+                <th>佢哋嘅關係</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>思維深度同速度</td>
+                <td>用做嘢代替存在</td>
+                <td>你嘅大腦越快，你越難停。天賦同陰影嘅來源係同一樣嘢——食傷極旺</td>
+              </tr>
+              <tr>
+                <td>壓力中嘅韌性</td>
+                <td>最需要人嗰陣推開人</td>
+                <td>你越韌越唔識求助。你嘅堅強同你嘅封閉嘅來源係同一樣嘢——七殺＋固定大十字</td>
+              </tr>
+              <tr>
+                <td>獨特嘅精神世界</td>
+                <td>唔好麻煩人</td>
+                <td>你嘅精神世界越深越覺得「冇人明白」。華蓋令你有深度，同時令你有距離</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="mt-32"><strong>天賦同陰影唔係對立嘅——佢哋係同一枚銀幣嘅兩面。</strong>你唔需要消滅陰影先至可以發揮天賦。你需要做嘅係：知道陰影喺度，然後選擇唔俾佢主導你嘅決定。</p>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>人生地圖 · 天賦與陰影</p>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
