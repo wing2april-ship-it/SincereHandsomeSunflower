@@ -27,14 +27,7 @@
 
   <nav class="nav">
     <a href="index.html" class="nav-logo">&#x2726; 人生地圖</a>
-    <ul class="nav-links">
-      <li><a href="core.html">核心主題</a></li>
-      <li><a href="gifts.html">天賦陰影</a></li>
-      <li><a href="domains.html">十大領域</a></li>
-      <li><a href="timeline.html">時間線</a></li>
-      <li><a href="map.html">人生地圖</a></li>
-      <li><a href="data.html" class="active">原始數據</a></li>
-    </ul>
+    <ul class="nav-links"></ul>
     <div class="nav-controls">
       <button class="theme-toggle" id="themeToggle" title="切換深淺色">&#x2600;</button>
       <button class="menu-toggle" id="menuToggle">
@@ -44,15 +37,7 @@
   </nav>
 
   <div class="mobile-nav" id="mobileNav">
-    <ul class="mobile-nav-links">
-      <li><a href="index.html">首頁</a></li>
-      <li><a href="core.html">核心主題</a></li>
-      <li><a href="gifts.html">天賦與陰影</a></li>
-      <li><a href="domains.html">十大領域</a></li>
-      <li><a href="timeline.html">時間線</a></li>
-      <li><a href="map.html">人生地圖</a></li>
-      <li><a href="data.html">原始數據</a></li>
-    </ul>
+    <ul class="mobile-nav-links"></ul>
   </div>
 
   <div class="page-wrapper">
@@ -64,7 +49,6 @@
           <h1>原始數據</h1>
         </div>
 
-        <!-- Quick Nav -->
         <div class="tag-row reveal mb-32" style="justify-content:center;">
           <a href="#sec-astro" class="tag" style="cursor:pointer;">星盤</a>
           <a href="#sec-bazi" class="tag" style="cursor:pointer;">八字</a>
@@ -72,261 +56,150 @@
           <a href="#sec-prog" class="tag" style="cursor:pointer;">推運</a>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- SECTION 1: ASTROLOGY -->
-        <!-- ============================================================ -->
+        <!-- ======================== ASTROLOGY ======================== -->
         <div id="sec-astro" class="section-title reveal">一、星盤數據</div>
-        <div class="section-subtitle reveal">Western Tropical Astrology · Placidus House System</div>
+        <div class="section-subtitle reveal">Western Tropical · Placidus · 2002年1月11日 19:30 香港</div>
 
-        <!-- 1.1 Planetary Positions -->
         <div class="card reveal">
           <div class="card-header">
             <div class="card-icon">&#x2641;</div>
             <div><div class="card-title">行星位置</div></div>
           </div>
           <table class="data-table">
-            <thead>
-              <tr><th>行星</th><th>星座</th><th>度數</th><th>宮位</th><th>備註</th></tr>
-            </thead>
+            <thead><tr><th>行星</th><th>星座</th><th>度數</th><th>宮位</th><th>備註</th></tr></thead>
             <tbody>
-              <tr><td>&#x2609; 太陽 Sun</td><td>摩羯 Capricorn</td><td>6°59'</td><td>6 宮</td><td>界（Term）· 尊貴 1 分</td></tr>
-              <tr><td>&#x263D; 月亮 Moon</td><td>巨蟹 Cancer</td><td>12°51'</td><td>12 宮</td><td>面（Face）· 尊貴 2 分</td></tr>
-              <tr><td>&#x263F; 水星 Mercury</td><td>水瓶 Aquarius</td><td>10°03'</td><td>6 宮</td><td>合 DSC（2°13'）</td></tr>
-              <tr><td>&#x2640; 金星 Venus</td><td>摩羯 Capricorn</td><td>7°43'</td><td>6 宮</td><td>灼傷（Combust）· 距太陽 0°43'</td></tr>
-              <tr><td>&#x2642; 火星 Mars</td><td>雙魚 Pisces</td><td>16°40'</td><td>8 宮</td><td>曜升（Exaltation）· 尊貴 6 分</td></tr>
-              <tr><td>&#x2643; 木星 Jupiter</td><td>巨蟹 Cancer</td><td>15°49' &#x211E;</td><td>11 宮</td><td>曜升（Exaltation）· 尊貴 4 分（逆行打折）</td></tr>
-              <tr><td>&#x2644; 土星 Saturn</td><td>雙子 Gemini</td><td>23°49' &#x211E;</td><td>10 宮</td><td>流浪星（Peregrine）· 尊貴 0 分</td></tr>
-              <tr><td>&#x2645; 天王星 Uranus</td><td>水瓶 Aquarius</td><td>4°17'</td><td>7 宮</td><td>合 DSC</td></tr>
-              <tr><td>&#x2646; 海王星 Neptune</td><td>水瓶 Aquarius</td><td>14°52'</td><td>6 宮</td><td>對分 ASC（2°36'）· 四分 MC/IC（4°59'）</td></tr>
-              <tr><td>&#x2647; 冥王星 Pluto</td><td>射手 Sagittarius</td><td>22°23'</td><td>5 宮</td><td>4→5 飛星</td></tr>
-              <tr><td>&#x260A; 北交點 N.Node</td><td>水瓶 Aquarius</td><td>18°17' &#x211E;</td><td>7 宮</td><td></td></tr>
-              <tr><td>&#x260B; 南交點 S.Node</td><td>獅子 Leo</td><td>18°17' &#x211E;</td><td>1 宮</td><td>合月亮（5°26'）</td></tr>
-              <tr><td>&#x26B7; 凱龍 Chiron</td><td>射手 Sagittarius</td><td>2°17'</td><td>5 宮</td><td></td></tr>
-              <tr><td>VX Vertex</td><td>巨蟹 Cancer</td><td>23°35'</td><td>11 宮</td><td>合木星（7°46'）</td></tr>
-              <tr><td>&#x26B8; 莉莉絲 Lilith</td><td>白羊 Aries</td><td>12°18'</td><td>9 宮</td><td></td></tr>
-              <tr><td>&#x2690; 福點 Fortune</td><td>天秤 Libra</td><td>18°45'</td><td>3 宮</td><td></td></tr>
+              <tr><td>&#x2609; 太陽</td><td>摩羯</td><td>21°4'</td><td>6 宮</td><td>面 Face · 尊貴 1 分</td></tr>
+              <tr><td>&#x263D; 月亮</td><td>射手</td><td>26°54'</td><td>5 宮</td><td>遊星 Peregrine · 尊貴 0 分</td></tr>
+              <tr><td>&#x263F; 水星</td><td>水瓶</td><td>10°3'</td><td>6 宮</td><td>夜間風象三分 · 尊貴 3 分</td></tr>
+              <tr><td>&#x2640; 金星</td><td>摩羯</td><td>20°21'</td><td>6 宮</td><td>灼傷 Combust · 距太陽 0°43'</td></tr>
+              <tr><td>&#x2642; 火星</td><td>雙魚</td><td>24°33'</td><td>8 宮</td><td>夜間水象三分 · 尊貴 3 分</td></tr>
+              <tr><td>&#x2643; 木星 &#x211E;</td><td>巨蟹</td><td>9°16'</td><td>11 宮</td><td>曜升 Exaltation · 尊貴 4 分（逆行打折~2分）</td></tr>
+              <tr><td>&#x2644; 土星 &#x211E;</td><td>雙子</td><td>8°44'</td><td>10 宮</td><td>遊星 Peregrine · 尊貴 0 分</td></tr>
+              <tr><td>&#x2645; 天王星</td><td>水瓶</td><td>22°58'</td><td>7 宮</td><td></td></tr>
+              <tr><td>&#x2646; 海王星</td><td>水瓶</td><td>7°49'</td><td>6 宮</td><td>對分 ASC 4°27' · 四分 MC/IC 2°4'</td></tr>
+              <tr><td>&#x2647; 冥王星</td><td>射手</td><td>16°24'</td><td>5 宮</td><td></td></tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 1.2 Angles -->
         <div class="card reveal">
           <div class="card-header">
             <div class="card-icon">&#x25B3;</div>
             <div><div class="card-title">四軸</div></div>
           </div>
           <table class="data-table">
-            <thead>
-              <tr><th>軸點</th><th>星座</th><th>度數</th><th>意義</th></tr>
-            </thead>
+            <thead><tr><th>軸點</th><th>星座</th><th>度數</th></tr></thead>
             <tbody>
-              <tr><td>ASC 上升</td><td>獅子 Leo</td><td>12°16'</td><td>外在自我 · 面具</td></tr>
-              <tr><td>DSC 下降</td><td>水瓶 Aquarius</td><td>12°16'</td><td>伴侶 · 合作對象</td></tr>
-              <tr><td>MC 天頂</td><td>金牛 Taurus</td><td>9°53'</td><td>事業 · 社會形象</td></tr>
-              <tr><td>IC 天底</td><td>天蠍 Scorpio</td><td>9°53'</td><td>家庭 · 根源</td></tr>
+              <tr><td>ASC</td><td>獅子</td><td>12°16'</td></tr>
+              <tr><td>DSC</td><td>水瓶</td><td>12°16'</td></tr>
+              <tr><td>MC</td><td>金牛</td><td>9°53'</td></tr>
+              <tr><td>IC</td><td>天蠍</td><td>9°53'</td></tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 1.3 House Cusps -->
-        <div class="card reveal">
-          <div class="card-header">
-            <div class="card-icon">&#x2B21;</div>
-            <div><div class="card-title">宮位界線（Placidus）</div></div>
-          </div>
-          <table class="data-table">
-            <thead>
-              <tr><th>宮位</th><th>星座</th><th>度數</th><th>宮位</th><th>星座</th><th>度數</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>1 宮</td><td>獅子</td><td>12°16'</td><td>7 宮</td><td>水瓶</td><td>12°16'</td></tr>
-              <tr><td>2 宮</td><td>處女</td><td>6°41'</td><td>8 宮</td><td>雙魚</td><td>6°41'</td></tr>
-              <tr><td>3 宮</td><td>天秤</td><td>3°49'</td><td>9 宮</td><td>白羊</td><td>3°49'</td></tr>
-              <tr><td>4 宮</td><td>天蠍</td><td>9°53'</td><td>10 宮</td><td>金牛</td><td>9°53'</td></tr>
-              <tr><td>5 宮</td><td>射手</td><td>14°44'</td><td>11 宮</td><td>雙子</td><td>14°44'</td></tr>
-              <tr><td>6 宮</td><td>摩羯</td><td>14°58'</td><td>12 宮</td><td>巨蟹</td><td>14°58'</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- 1.4 Aspects -->
         <div class="card reveal">
           <div class="card-header">
             <div class="card-icon">&#x2731;</div>
             <div><div class="card-title">主要相位</div></div>
           </div>
-
           <div class="expandable">
-            <button class="expandable-trigger">
-              <span>合相 Conjunction（0°）</span>
-              <span class="chevron">&#x25BC;</span>
-            </button>
-            <div class="expandable-content">
-              <div class="expandable-inner">
-                <table class="data-table">
-                  <thead><tr><th>行星 A</th><th>行星 B</th><th>容許度</th><th>備註</th></tr></thead>
-                  <tbody>
-                    <tr><td>&#x2609; 太陽</td><td>&#x2640; 金星</td><td>0°16'</td><td>灼傷 · 距太陽 0°43'</td></tr>
-                    <tr><td>&#x263D; 月亮</td><td>南交點</td><td>5°26'</td><td>情感帶有「舊」嘅特質</td></tr>
-                    <tr><td>&#x2643; 木星</td><td>Vertex</td><td>7°46'</td><td>信念同命運交叉點</td></tr>
-                    <tr><td>&#x263F; 水星</td><td>DSC</td><td>2°13'</td><td>溝通能力強（一對一）</td></tr>
-                    <tr><td>&#x2645; 天王星</td><td>DSC</td><td>~2°</td><td>伴侶需要獨立同空間</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+            <button class="expandable-trigger"><span>合相</span><span class="chevron">&#x25BC;</span></button>
+            <div class="expandable-content"><div class="expandable-inner">
+              <table class="data-table">
+                <thead><tr><th>A</th><th>B</th><th>容許度</th><th>備註</th></tr></thead>
+                <tbody>
+                  <tr><td>太陽（摩 21°）</td><td>金星（摩 20°）</td><td>0°43'</td><td>灼傷</td></tr>
+                  <tr><td>水星（瓶 10°）</td><td>海王星（瓶 7°）</td><td>2°14'</td><td>思維帶直覺</td></tr>
+                  <tr><td>水星（瓶 10°）</td><td>DSC（瓶 12°）</td><td>2°13'</td><td>一對一溝通強</td></tr>
+                </tbody>
+              </table>
+            </div></div>
           </div>
-
           <div class="expandable">
-            <button class="expandable-trigger">
-              <span>對分相 Opposition（180°）</span>
-              <span class="chevron">&#x25BC;</span>
-            </button>
-            <div class="expandable-content">
-              <div class="expandable-inner">
-                <table class="data-table">
-                  <thead><tr><th>行星 A</th><th>行星 B</th><th>容許度</th><th>備註</th></tr></thead>
-                  <tbody>
-                    <tr><td>&#x263D; 月亮（蟹 12°）</td><td>&#x2642; 火星（魚 16°）</td><td>3°49'</td><td>情感 vs 行動力對立</td></tr>
-                    <tr><td>&#x2646; 海王星（瓶 14°）</td><td>ASC（獅 12°）</td><td>2°36'</td><td>自我邊界模糊</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+            <button class="expandable-trigger"><span>四分相</span><span class="chevron">&#x25BC;</span></button>
+            <div class="expandable-content"><div class="expandable-inner">
+              <table class="data-table">
+                <thead><tr><th>A</th><th>B</th><th>容許度</th><th>備註</th></tr></thead>
+                <tbody>
+                  <tr><td>月亮（射 26°）</td><td>火星（魚 24°）</td><td>2°21'</td><td>情感 vs 行動力</td></tr>
+                  <tr><td>海王星（瓶 7°）</td><td>MC/IC</td><td>2°4'</td><td>事業＋家庭方向模糊</td></tr>
+                </tbody>
+              </table>
+            </div></div>
           </div>
-
           <div class="expandable">
-            <button class="expandable-trigger">
-              <span>四分相 Square（90°）</span>
-              <span class="chevron">&#x25BC;</span>
-            </button>
-            <div class="expandable-content">
-              <div class="expandable-inner">
-                <table class="data-table">
-                  <thead><tr><th>行星 A</th><th>行星 B</th><th>容許度</th><th>備註</th></tr></thead>
-                  <tbody>
-                    <tr><td>&#x2642; 火星（魚 16°）</td><td>&#x2643; 木星（蟹 15°）</td><td>0°51'</td><td>最 tight 嘅四分相</td></tr>
-                    <tr><td>&#x263F; 水星（瓶 10°）</td><td>&#x2643; 木星（蟹 15°）</td><td>5°46'</td><td>思維 vs 信念</td></tr>
-                    <tr><td>&#x2643; 木星（蟹 15°）</td><td>&#x2647; 冥王星（射 22°）</td><td>6°34'</td><td>信念 vs 轉化</td></tr>
-                    <tr><td>&#x2646; 海王星（瓶 14°）</td><td>MC/IC（牛/蠍 9°）</td><td>4°59'</td><td>事業方向模糊</td></tr>
-                    <tr><td>&#x2609; 太陽（摩 6°）</td><td>&#x2646; 海王星（瓶 14°）</td><td>~7°</td><td>自我認同模糊</td></tr>
-                    <tr><td>&#x2644; 土星（雙 23°）</td><td>&#x2646; 海王星（瓶 14°）</td><td>~9°</td><td>結構 vs 溶解</td></tr>
-                    <tr><td>&#x2642; 火星（魚 16°）</td><td>&#x2647; 冥王星（射 22°）</td><td>~6°</td><td>行動力 vs 深層權力</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
+            <button class="expandable-trigger"><span>三分相</span><span class="chevron">&#x25BC;</span></button>
+            <div class="expandable-content"><div class="expandable-inner">
+              <table class="data-table">
+                <thead><tr><th>A</th><th>B</th><th>容許度</th><th>備註</th></tr></thead>
+                <tbody>
+                  <tr><td>土星（雙 8°）</td><td>海王星（瓶 7°）</td><td>0°55'</td><td>全盤最 tight · 結構↔靈性暢通</td></tr>
+                </tbody>
+              </table>
+            </div></div>
           </div>
-
           <div class="expandable">
-            <button class="expandable-trigger">
-              <span>六分相 Sextile（60°）& 三分相 Trine（120°）</span>
-              <span class="chevron">&#x25BC;</span>
-            </button>
-            <div class="expandable-content">
-              <div class="expandable-inner">
-                <table class="data-table">
-                  <thead><tr><th>行星 A</th><th>行星 B</th><th>相位</th><th>容許度</th></tr></thead>
-                  <tbody>
-                    <tr><td>&#x263F; 水星（瓶 10°）</td><td>&#x2642; 火星（魚 16°）</td><td>六分相</td><td>~7°</td></tr>
-                    <tr><td>&#x263D; 月亮（蟹 12°）</td><td>&#x2646; 海王星（瓶 14°）</td><td>六分相</td><td>~2°</td></tr>
-                    <tr><td>&#x2643; 木星（蟹 15°）</td><td>&#x2644; 土星（雙 23°）</td><td>三分相</td><td>~8°</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <div class="expandable">
-            <button class="expandable-trigger">
-              <span>固定大十字 Fixed Grand Cross</span>
-              <span class="chevron">&#x25BC;</span>
-            </button>
-            <div class="expandable-content">
-              <div class="expandable-inner">
-                <p><strong>四顆行星構成固定大十字：</strong></p>
-                <table class="data-table">
-                  <thead><tr><th>行星</th><th>星座</th><th>度數</th><th>宮位</th></tr></thead>
-                  <tbody>
-                    <tr><td>&#x263F; 水星</td><td>水瓶</td><td>10°03'</td><td>6 宮</td></tr>
-                    <tr><td>&#x2642; 火星</td><td>雙魚</td><td>16°40'</td><td>8 宮</td></tr>
-                    <tr><td>&#x2643; 木星 &#x211E;</td><td>巨蟹</td><td>15°49'</td><td>11 宮</td></tr>
-                    <tr><td>&#x2647; 冥王星</td><td>射手</td><td>22°23'</td><td>5 宮</td></tr>
-                  </tbody>
-                </table>
-                <p class="mt-32">呢四顆行星透過四分相同對分相交織成一個「不停運轉但冇出口」嘅結構——思維被困住、消耗大、但同時代表極強嘅意志力同深度。</p>
-              </div>
-            </div>
+            <button class="expandable-trigger"><span>其他相位</span><span class="chevron">&#x25BC;</span></button>
+            <div class="expandable-content"><div class="expandable-inner">
+              <table class="data-table">
+                <thead><tr><th>A</th><th>B</th><th>相位</th><th>容許度</th></tr></thead>
+                <tbody>
+                  <tr><td>太陽（摩 21°）</td><td>火星（魚 24°）</td><td>六分相</td><td>3°29'</td></tr>
+                  <tr><td>金星（摩 20°）</td><td>火星（魚 24°）</td><td>六分相</td><td>4°12'</td></tr>
+                  <tr><td>海王星（瓶 7°）</td><td>ASC（獅 12°）</td><td>對分相</td><td>4°27'</td></tr>
+                  <tr><td>水星（瓶 10°）</td><td>木星（蟹 9°）</td><td>梅花</td><td>0°47'</td></tr>
+                </tbody>
+              </table>
+            </div></div>
           </div>
         </div>
 
-        <!-- 1.5 Essential Dignities -->
         <div class="card reveal">
           <div class="card-header">
             <div class="card-icon">&#x269B;</div>
-            <div><div class="card-title">先天尊貴 Essential Dignities</div></div>
+            <div><div class="card-title">先天尊貴</div></div>
           </div>
           <table class="data-table">
-            <thead>
-              <tr><th>行星</th><th>星座</th><th>度數</th><th>尊貴類型</th><th>分數</th></tr>
-            </thead>
+            <thead><tr><th>行星</th><th>星座</th><th>尊貴</th><th>分數</th></tr></thead>
             <tbody>
-              <tr><td>&#x2642; 火星</td><td>雙魚</td><td>16°40'</td><td>曜升 Exaltation</td><td><strong>6 分</strong>（全盤最高）</td></tr>
-              <tr><td>&#x2643; 木星 &#x211E;</td><td>巨蟹</td><td>15°49'</td><td>曜升 Exaltation</td><td>4 分（逆行打折）</td></tr>
-              <tr><td>&#x263D; 月亮</td><td>巨蟹</td><td>12°51'</td><td>面 Face</td><td>2 分</td></tr>
-              <tr><td>&#x2609; 太陽</td><td>摩羯</td><td>6°59'</td><td>界 Term</td><td><strong>1 分</strong>（全盤最低）</td></tr>
-              <tr><td>&#x2640; 金星</td><td>摩羯</td><td>7°43'</td><td>灼傷 Combust</td><td>0 分（Peregrine）</td></tr>
-              <tr><td>&#x2644; 土星 &#x211E;</td><td>雙子</td><td>23°49'</td><td>—</td><td>0 分（Peregrine）</td></tr>
-              <tr><td>&#x263F; 水星</td><td>水瓶</td><td>10°03'</td><td>—</td><td>0 分（Peregrine）</td></tr>
+              <tr><td>木星 &#x211E;</td><td>巨蟹</td><td>曜升</td><td><strong>4 分</strong>（逆行打折~2分）</td></tr>
+              <tr><td>火星</td><td>雙魚</td><td>夜間水象三分</td><td><strong>3 分</strong></td></tr>
+              <tr><td>水星</td><td>水瓶</td><td>夜間風象三分</td><td><strong>3 分</strong></td></tr>
+              <tr><td>太陽</td><td>摩羯</td><td>面 Face</td><td>1 分</td></tr>
+              <tr><td>月亮</td><td>射手</td><td>—</td><td>0 分（Peregrine）</td></tr>
+              <tr><td>金星</td><td>摩羯</td><td>灼傷</td><td>0 分</td></tr>
+              <tr><td>土星 &#x211E;</td><td>雙子</td><td>—</td><td>0 分（Peregrine）</td></tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 1.6 Element / Modality -->
         <div class="card reveal">
           <div class="card-header">
             <div class="card-icon">&#x25C8;</div>
-            <div><div class="card-title">元素與模式分佈</div></div>
+            <div><div class="card-title">元素與模式</div></div>
           </div>
-          <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
             <table class="data-table">
-              <thead><tr><th>元素</th><th>百分比</th><th>行星數</th></tr></thead>
+              <thead><tr><th>元素</th><th>%</th></tr></thead>
               <tbody>
-                <tr><td>&#x2648; 火 Fire</td><td>0%</td><td>0</td></tr>
-                <tr><td>&#x2649; 土 Earth</td><td>26.8%</td><td>太陽＋金星＋冥王星</td></tr>
-                <tr><td>&#x264E; 風 Air</td><td><strong>35.7%（最強）</strong></td><td>水星＋土星＋天王星＋海王星</td></tr>
-                <tr><td>&#x264B; 水 Water</td><td>37.5%</td><td>月亮＋火星＋木星</td></tr>
+                <tr><td>火</td><td>20%</td></tr>
+                <tr><td>土</td><td>20%</td></tr>
+                <tr><td><strong>風</strong></td><td><strong>40%</strong></td></tr>
+                <tr><td>水</td><td>20%</td></tr>
               </tbody>
             </table>
             <table class="data-table">
-              <thead><tr><th>模式</th><th>百分比</th><th>行星數</th></tr></thead>
+              <thead><tr><th>模式</th><th>%</th></tr></thead>
               <tbody>
-                <tr><td>開創 Cardinal</td><td>26%</td><td>太陽＋月亮＋金星</td></tr>
-                <tr><td><strong>固定 Fixed</strong></td><td><strong>52%（超重）</strong></td><td>水星＋天王星＋海王星＋冥王星</td></tr>
-                <tr><td>變動 Mutable</td><td>22%</td><td>火星＋木星＋土星</td></tr>
+                <tr><td>開創</td><td>30%</td></tr>
+                <tr><td>固定</td><td>30%</td></tr>
+                <tr><td><strong>變動</strong></td><td><strong>40%</strong></td></tr>
               </tbody>
             </table>
           </div>
         </div>
 
-        <!-- 1.7 Declinations / Latitudes -->
-        <div class="card reveal">
-          <div class="card-header">
-            <div class="card-icon">&#x2195;</div>
-            <div><div class="card-title">赤緯與黃緯</div></div>
-          </div>
-          <table class="data-table">
-            <thead><tr><th>行星</th><th>赤緯 Declination</th><th>黃緯 Latitude</th></tr></thead>
-            <tbody>
-              <tr><td>&#x2609; 太陽</td><td>0.8° 南</td><td>—</td></tr>
-              <tr><td>&#x263D; 月亮</td><td>2.8° 北</td><td>2.3° 北</td></tr>
-              <tr><td>&#x2642; 火星</td><td>0.2° 南</td><td>0.4° 北</td></tr>
-            </tbody>
-          </table>
-          <p class="mt-32" style="font-size:0.85rem; color: var(--text-muted);">無赤緯平行或黃緯合相（月亮赤緯 2.8° 北 vs 太陽赤緯 0.8° 南 — 方向相反）</p>
-        </div>
-
-        <!-- 1.8 Mutual Reception -->
         <div class="card reveal">
           <div class="card-header">
             <div class="card-icon">&#x21C4;</div>
@@ -335,47 +208,43 @@
           <table class="data-table">
             <thead><tr><th>類型</th><th>行星</th><th>機制</th></tr></thead>
             <tbody>
-              <tr><td>互溶</td><td>&#x263D; 月亮（蟹）⟷ &#x2643; 木星（蟹）</td><td>月亮巨蟹＝月亮入廟＋木星曜升。兩者同在巨蟹形成雙向通道</td></tr>
-              <tr><td>接納</td><td>&#x2609; 太陽（摩羯）← &#x2640; 金星（界）</td><td>太陽喺金星嘅界入面。金星接納太陽</td></tr>
-              <tr><td>接納</td><td>&#x2609; 太陽（摩羯）← &#x2642; 火星（曜升）</td><td>摩羯係火星曜升嘅星座。火星接納太陽</td></tr>
+              <tr><td><strong>互溶</strong></td><td>月亮（射手）⟷ 木星（巨蟹）</td><td>雙向通道 · 情感↔信念</td></tr>
+              <tr><td>接納</td><td>太陽 ← 土星（界）＋火星（曜升）</td><td>土星摩羯18-24°有界＋火星摩羯有曜升</td></tr>
+              <tr><td>接納</td><td>月亮 ← 木星（入廟）＋火星（界）</td><td>木星射手入廟＋火星射手25-30°有界</td></tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 1.9 飛星 -->
         <div class="card reveal">
           <div class="card-header">
             <div class="card-icon">&#x2708;</div>
-            <div><div class="card-title">飛星圖（宮主星去向）</div></div>
+            <div><div class="card-title">飛星圖</div></div>
           </div>
           <table class="data-table">
-            <thead><tr><th>宮位</th><th>宮主星</th><th>飛入</th><th>意義</th></tr></thead>
+            <thead><tr><th>宮位</th><th>宮主</th><th>飛入</th></tr></thead>
             <tbody>
-              <tr><td>1 宮（獅子）</td><td>&#x2609; 太陽</td><td>6 宮</td><td>自我→日常工作消耗</td></tr>
-              <tr><td>2 宮（處女）</td><td>&#x263F; 水星</td><td>6 宮</td><td>金錢→靠日常技能賺取</td></tr>
-              <tr><td>3 宮（天秤）</td><td>&#x2640; 金星</td><td>6 宮</td><td>溝通→服務型表達</td></tr>
-              <tr><td>4 宮（天蠍）</td><td>&#x2647; 冥王星</td><td>5 宮</td><td>家庭→帶入戀愛（4→5 飛星）</td></tr>
-              <tr><td>5 宮（射手）</td><td>&#x2643; 木星</td><td>11 宮</td><td>戀愛→群體歸屬感</td></tr>
-              <tr><td>6 宮（摩羯）</td><td>&#x2644; 土星</td><td>10 宮</td><td>日常工作→建構事業（6→10 飛星）</td></tr>
-              <tr><td>7 宮（水瓶）</td><td>&#x2645; 天王星</td><td>7 宮（留守）</td><td>伴侶→獨立同空間</td></tr>
-              <tr><td>7 宮（水瓶）</td><td>&#x2646; 海王星</td><td>6 宮</td><td>合作→服務同消耗</td></tr>
-              <tr><td>8 宮（雙魚）</td><td>&#x2643; 木星</td><td>11 宮</td><td>深層轉化→群體連結</td></tr>
-              <tr><td>9 宮（白羊）</td><td>&#x2642; 火星</td><td>8 宮</td><td>信念→深層轉化</td></tr>
-              <tr><td>10 宮（金牛）</td><td>&#x2640; 金星</td><td>6 宮</td><td>事業→日常工作（灼傷）</td></tr>
-              <tr><td>11 宮（雙子）</td><td>&#x263F; 水星</td><td>6 宮</td><td>人脈→靠服務建立</td></tr>
-              <tr><td>12 宮（巨蟹）</td><td>&#x263D; 月亮</td><td>12 宮（留守）</td><td>潛意識→情感內在</td></tr>
+              <tr><td>1（獅子）</td><td>太陽</td><td>6 宮</td></tr>
+              <tr><td>2（處女）</td><td>水星</td><td>6 宮</td></tr>
+              <tr><td>3（天秤）</td><td>金星</td><td>6 宮</td></tr>
+              <tr><td>4（天蠍）</td><td>冥王星</td><td>5 宮</td></tr>
+              <tr><td>5（射手）</td><td>木星</td><td>11 宮</td></tr>
+              <tr><td>6（摩羯）</td><td>土星</td><td>10 宮</td></tr>
+              <tr><td>7（水瓶）</td><td>天王星</td><td>7 宮留守</td></tr>
+              <tr><td>7（水瓶）</td><td>海王星</td><td>6 宮</td></tr>
+              <tr><td>8（雙魚）</td><td>木星</td><td>11 宮</td></tr>
+              <tr><td>9（白羊）</td><td>火星</td><td>8 宮</td></tr>
+              <tr><td>10（金牛）</td><td>金星</td><td>6 宮</td></tr>
+              <tr><td>11（雙子）</td><td>水星</td><td>6 宮</td></tr>
+              <tr><td>12（巨蟹）</td><td>月亮</td><td>5 宮</td></tr>
             </tbody>
           </table>
-          <p class="mt-32" style="font-size:0.85rem; color: var(--text-muted);"><strong>12 條飛星中 5 條入 6 宮</strong> — 全盤 40% 能量被日常工作消耗</p>
+          <p class="mt-32" style="font-size:0.85rem; color:var(--text-muted);">12 條飛星中 5 條入 6 宮 · 40% 能量被日常工作消耗</p>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- SECTION 2: BAZI (FOUR PILLARS) -->
-        <!-- ============================================================ -->
+        <!-- ======================== BAZI ======================== -->
         <div id="sec-bazi" class="section-title reveal mt-32">二、八字數據</div>
-        <div class="section-subtitle reveal">四柱命理</div>
+        <div class="section-subtitle reveal">2002年1月11日 19:30 香港 · 男命 · 身弱喜火土</div>
 
-        <!-- 2.1 Four Pillars -->
         <div class="card reveal">
           <div class="card-header">
             <div class="card-icon">&#x2688;</div>
@@ -385,7 +254,7 @@
             <div class="pillar">
               <div class="pillar-label">年柱</div>
               <div class="pillar-stem metal">辛</div>
-              <div class="pillar-branch metal">酉</div>
+              <div class="pillar-branch fire">巳</div>
               <div class="pillar-ten-god">食神</div>
             </div>
             <div class="pillar">
@@ -408,330 +277,197 @@
             </div>
           </div>
           <table class="data-table mt-32">
-            <thead><tr><th></th><th>年柱</th><th>月柱</th><th>日柱</th><th>時柱</th></tr></thead>
+            <thead><tr><th></th><th>年</th><th>月</th><th>日</th><th>時</th></tr></thead>
             <tbody>
               <tr><td><strong>天干</strong></td><td>辛（陰金）</td><td>辛（陰金）</td><td><strong>己（陰土）</strong></td><td>癸（陰水）</td></tr>
-              <tr><td><strong>地支</strong></td><td>酉（陰金）</td><td>丑（陰土）</td><td>卯（陰木）</td><td>酉（陰金）</td></tr>
-              <tr><td><strong>藏干</strong></td><td>辛</td><td>己·癸·辛</td><td>乙</td><td>辛</td></tr>
-              <tr><td><strong>納音</strong></td><td>石榴木</td><td>壁上土</td><td>城頭土</td><td>劍鋒金</td></tr>
-              <tr><td><strong>生肖</strong></td><td>雞</td><td>—</td><td>—</td><td>—</td></tr>
+              <tr><td><strong>地支</strong></td><td>巳（陰火）</td><td>丑（陰土）</td><td>卯（陰木）</td><td>酉（陰金）</td></tr>
+              <tr><td><strong>藏干</strong></td><td>丙·庚·戊</td><td>己·癸·辛</td><td>乙</td><td>辛</td></tr>
+              <tr><td><strong>支神</strong></td><td>正印·傷官·劫財</td><td>比肩·偏財·食神</td><td>七殺</td><td>食神</td></tr>
+              <tr><td><strong>納音</strong></td><td>白蠟金</td><td>壁上土</td><td>城頭土</td><td>劍鋒金</td></tr>
+              <tr><td><strong>空亡</strong></td><td>申酉</td><td>辰巳</td><td>申酉</td><td>戌亥</td></tr>
+              <tr><td><strong>星運</strong></td><td>帝旺</td><td>墓</td><td>病</td><td>長生</td></tr>
+              <tr><td><strong>自坐</strong></td><td>死</td><td>養</td><td>病</td><td>病</td></tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 2.2 Ten Gods -->
         <div class="card reveal">
           <div class="card-header">
             <div class="card-icon">&#x2689;</div>
-            <div><div class="card-title">十神分析</div></div>
+            <div><div class="card-title">十神統計</div></div>
           </div>
-
-          <div class="expandable">
-            <button class="expandable-trigger">
-              <span>天干十神</span>
-              <span class="chevron">&#x25BC;</span>
-            </button>
-            <div class="expandable-content">
-              <div class="expandable-inner">
-                <table class="data-table">
-                  <thead><tr><th>位置</th><th>天干</th><th>五行</th><th>十神</th></tr></thead>
-                  <tbody>
-                    <tr><td>年干</td><td>辛</td><td>陰金</td><td>食神</td></tr>
-                    <tr><td>月干</td><td>辛</td><td>陰金</td><td>食神</td></tr>
-                    <tr><td>日干</td><td>己</td><td>陰土</td><td>日主</td></tr>
-                    <tr><td>時干</td><td>癸</td><td>陰水</td><td>偏財</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <div class="expandable">
-            <button class="expandable-trigger">
-              <span>地支藏干十神</span>
-              <span class="chevron">&#x25BC;</span>
-            </button>
-            <div class="expandable-content">
-              <div class="expandable-inner">
-                <table class="data-table">
-                  <thead><tr><th>地支</th><th>藏干</th><th>五行</th><th>十神</th><th>旺度</th></tr></thead>
-                  <tbody>
-                    <tr><td rowspan="1">酉（年）</td><td>辛</td><td>陰金</td><td>食神</td><td>本氣</td></tr>
-                    <tr><td rowspan="3">丑（月）</td><td>己</td><td>陰土</td><td>比肩</td><td>本氣</td></tr>
-                    <tr><td>癸</td><td>陰水</td><td>偏財</td><td>中氣</td></tr>
-                    <tr><td>辛</td><td>陰金</td><td>食神</td><td>餘氣</td></tr>
-                    <tr><td>卯（日）</td><td>乙</td><td>陰木</td><td>七殺</td><td>本氣（帝旺）</td></tr>
-                    <tr><td>酉（時）</td><td>辛</td><td>陰金</td><td>食神</td><td>本氣</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <div class="expandable">
-            <button class="expandable-trigger">
-              <span>十神統計</span>
-              <span class="chevron">&#x25BC;</span>
-            </button>
-            <div class="expandable-content">
-              <div class="expandable-inner">
-                <table class="data-table">
-                  <thead><tr><th>十神</th><th>次數</th><th>百分比</th><th>出現位置</th></tr></thead>
-                  <tbody>
-                    <tr><td><strong>食神（辛金）</strong></td><td><strong>5</strong></td><td><strong>33%</strong></td><td>年干、月干、年支酉、月支丑藏辛、時支酉</td></tr>
-                    <tr><td>偏財（癸水）</td><td>2</td><td>13%</td><td>時干、月支丑藏癸</td></tr>
-                    <tr><td>比肩（己土）</td><td>1</td><td>7%</td><td>月支丑藏己（日干為日主不計）</td></tr>
-                    <tr><td>七殺（乙木）</td><td>1</td><td>7%</td><td>日支卯藏乙（帝旺）</td></tr>
-                    <tr style="color: var(--text-muted);"><td>正印（丙火）</td><td>0</td><td>0%</td><td>完全缺席</td></tr>
-                    <tr style="color: var(--text-muted);"><td>偏印（丁火）</td><td>0</td><td>0%</td><td>完全缺席</td></tr>
-                    <tr style="color: var(--text-muted);"><td>正官（甲木）</td><td>0</td><td>0%</td><td>完全缺席</td></tr>
-                    <tr style="color: var(--text-muted);"><td>正財（壬水）</td><td>0</td><td>0%</td><td>完全缺席</td></tr>
-                    <tr style="color: var(--text-muted);"><td>傷官（庚金）</td><td>0</td><td>0%</td><td>天干缺席</td></tr>
-                    <tr style="color: var(--text-muted);"><td>劫財（戊土）</td><td>0</td><td>0%</td><td>天干缺席</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
+          <table class="data-table">
+            <thead><tr><th>十神</th><th>次數</th><th>位置</th></tr></thead>
+            <tbody>
+              <tr><td><strong>食神（辛金）</strong></td><td><strong>4</strong></td><td>年干、月干、月支丑藏辛、時支酉</td></tr>
+              <tr><td>偏財（癸水）</td><td>2</td><td>時干、月支丑藏癸</td></tr>
+              <tr><td>傷官（庚金）</td><td>1</td><td>年支巳藏庚</td></tr>
+              <tr><td>正印（丙火）</td><td>1</td><td>年支巳藏丙</td></tr>
+              <tr><td>七殺（乙木）</td><td>1</td><td>日支卯藏乙（帝旺）</td></tr>
+              <tr><td>比肩（己土）</td><td>1</td><td>月支丑藏己</td></tr>
+              <tr><td>劫財（戊土）</td><td>1</td><td>年支巳藏戊</td></tr>
+              <tr style="color:var(--text-muted);"><td>偏印（丁火）</td><td>0</td><td>完全缺席</td></tr>
+              <tr style="color:var(--text-muted);"><td>正官（甲木）</td><td>0</td><td>完全缺席</td></tr>
+              <tr style="color:var(--text-muted);"><td>正財（壬水）</td><td>0</td><td>完全缺席</td></tr>
+            </tbody>
+          </table>
+          <p class="mt-32" style="font-size:0.85rem; color:var(--text-muted);">食傷合計 5 次（33%）· 正印只有 1 次且藏喺年支巳入面（極弱）· 偏印·正官·正財完全缺席</p>
         </div>
 
-        <!-- 2.3 Shensha -->
         <div class="card reveal">
           <div class="card-header">
             <div class="card-icon">&#x2736;</div>
             <div><div class="card-title">神煞</div></div>
           </div>
           <table class="data-table">
-            <thead><tr><th>神煞</th><th>位置</th><th>類型</th><th>意義</th></tr></thead>
+            <thead><tr><th>神煞</th><th>位置</th><th>類型</th></tr></thead>
             <tbody>
-              <tr><td>華蓋</td><td>月柱（丑）</td><td>靈性</td><td>智慧、孤獨、靈性、藝術</td></tr>
-              <tr><td>太極貴人</td><td>月柱（丑）</td><td>靈性</td><td>對陰陽法則有直覺、利玄學</td></tr>
-              <tr><td>童子</td><td>日柱（卯）</td><td>靈性</td><td>靈魂特質、精神世界超越年齡</td></tr>
-              <tr><td>將星</td><td>時柱（酉）</td><td>事業</td><td>後半生發力、領導力</td></tr>
-              <tr><td>金神</td><td>時柱（癸酉）</td><td>事業</td><td>白蠟金需火鍛造、遇火則貴</td></tr>
-              <tr><td>文昌</td><td>酉</td><td>學習</td><td>學習能力強、利考試</td></tr>
-              <tr><td>詞館</td><td>丑（月柱）</td><td>學習</td><td>書面表達能力強</td></tr>
-              <tr><td>學堂</td><td>卯（日柱）</td><td>學習</td><td>學習天賦</td></tr>
-              <tr><td>國印</td><td>時柱</td><td>事業</td><td>專業認證、官方認可</td></tr>
-              <tr><td>驛馬</td><td>日柱（卯）</td><td>變動</td><td>遷移、變動、行山利運</td></tr>
-              <tr><td>桃花</td><td>酉（年柱）</td><td>感情</td><td>異性緣、人際魅力</td></tr>
-              <tr><td>天乙貴人</td><td>—</td><td>貴人</td><td>有貴人相助</td></tr>
-              <tr><td>天德</td><td>—</td><td>化解</td><td>化解凶煞</td></tr>
-              <tr><td>月德合</td><td>—</td><td>化解</td><td>化解凶煞</td></tr>
+              <tr><td>驛馬</td><td>年柱（巳）</td><td>變動</td></tr>
+              <tr><td>羊刃</td><td>年柱（巳）</td><td>力量</td></tr>
+              <tr><td>學堂</td><td>年柱（巳）</td><td>學習</td></tr>
+              <tr><td>國印</td><td>年柱（巳）</td><td>事業</td></tr>
+              <tr><td>福星貴人</td><td>年柱（巳）</td><td>貴人</td></tr>
+              <tr><td>華蓋</td><td>月柱（丑）</td><td>靈性</td></tr>
+              <tr><td>太極貴人</td><td>月柱（丑）</td><td>靈性</td></tr>
+              <tr><td>災煞</td><td>日柱（卯）</td><td>警示</td></tr>
+              <tr><td>童子</td><td>日柱（卯）</td><td>靈性</td></tr>
+              <tr><td>文昌貴人</td><td>時柱（酉）</td><td>學習</td></tr>
+              <tr><td>將星</td><td>時柱（酉）</td><td>事業</td></tr>
+              <tr><td>金神</td><td>時柱（癸酉）</td><td>事業</td></tr>
+              <tr><td>詞館</td><td>時柱（酉）</td><td>學習</td></tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 2.4 三合六合六沖 -->
         <div class="card reveal">
           <div class="card-header">
             <div class="card-icon">&#x21C5;</div>
-            <div><div class="card-title">三合 · 六合 · 六沖 · 自刑</div></div>
+            <div><div class="card-title">三合 · 暗合 · 六沖 · 自刑</div></div>
           </div>
           <table class="data-table">
-            <thead><tr><th>類型</th><th>地支</th><th>結果</th><th>影響</th></tr></thead>
+            <thead><tr><th>類型</th><th>地支</th><th>結果</th></tr></thead>
             <tbody>
-              <tr><td><strong>三合金局</strong></td><td>巳·酉·丑</td><td>化金</td><td>月令丑被合金＝土嘅根基被消耗為食傷金</td></tr>
-              <tr><td>六合</td><td>酉·辰</td><td>化金</td><td>辰唔喺原局，行運見辰時觸發</td></tr>
-              <tr><td><strong>六沖</strong></td><td>酉（年/時）沖 卯（日）</td><td>卯酉沖</td><td>配偶宮動盪、感情有變化但代表「活」</td></tr>
-              <tr><td><strong>自刑</strong></td><td>酉·酉</td><td>自刑</td><td>食傷自我消耗加劇</td></tr>
+              <tr><td><strong>三合金局</strong></td><td>巳（年）·酉（時）·丑（月）</td><td>化金 · 土嘅根基被消耗為食傷</td></tr>
+              <tr><td><strong>暗合</strong></td><td>巳（年）·酉（時）</td><td>年柱同時柱之間有隱藏連接</td></tr>
+              <tr><td><strong>六沖</strong></td><td>酉（時）沖卯（日）</td><td>配偶宮動盪 · 代表「活」</td></tr>
+              <tr><td><strong>自刑</strong></td><td>酉·酉</td><td>食傷自我消耗加劇</td></tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 2.5 空亡 -->
-        <div class="card reveal">
-          <div class="card-header">
-            <div class="card-icon">&#x25CB;</div>
-            <div><div class="card-title">空亡</div></div>
-          </div>
-          <table class="data-table">
-            <thead><tr><th>日柱</th><th>空亡地支</th><th>影響</th></tr></thead>
-            <tbody>
-              <tr><td>己卯</td><td>申、酉</td><td>酉空亡＝食傷空亡。但原局兩個酉代表食傷力量極強，空亡效果被削弱</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- 2.6 大運 -->
-        <div class="card reveal">
-          <div class="card-header">
-            <div class="card-icon">&#x27F3;</div>
-            <div><div class="card-title">大運（逆排）</div></div>
-          </div>
-          <table class="data-table">
-            <thead><tr><th>大運</th><th>年份</th><th>歲數</th><th>天干</th><th>地支</th><th>天干十神</th><th>地支十神</th><th>狀態</th></tr></thead>
-            <tbody>
-              <tr><td>第一運</td><td>—</td><td>3–12</td><td>己</td><td>亥</td><td>比肩</td><td>正財</td><td>比肩幫身＋正財出現</td></tr>
-              <tr><td>第二運</td><td>—</td><td>13–22</td><td>戊</td><td>戌</td><td>劫財</td><td>燥土幫身</td><td>劫財爭奪＋燥土恢復</td></tr>
-              <tr style="background: var(--accent-dim);"><td><strong>而家</strong></td><td>2024–2033</td><td><strong>23–32</strong></td><td><strong>丁</strong></td><td><strong>酉</strong></td><td>偏印 ✓</td><td>食神 ✗</td><td>有保護但有消耗</td></tr>
-              <tr><td>下一運</td><td>2034–2043</td><td>33–42</td><td>丙</td><td>申</td><td>正印 ✓✓</td><td>傷官 ✗</td><td>正印到位——事業上升</td></tr>
-              <tr><td>第三運</td><td>2044–2053</td><td>43–52</td><td>乙</td><td>未</td><td>七殺 △</td><td>燥土 ✓✓</td><td>殺印相生＋燥土幫身</td></tr>
-              <tr><td>第四運</td><td>2054–2063</td><td>53–62</td><td>甲</td><td>午</td><td>正官 △</td><td>火 ✓✓✓</td><td>金神成器——巔峰</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- 2.7 十二長生 -->
         <div class="card reveal">
           <div class="card-header">
             <div class="card-icon">&#x2697;</div>
             <div><div class="card-title">日主十二長生</div></div>
           </div>
-          <p>日主 <strong>己土（陰土）</strong>十二長生：</p>
-          <table class="data-table mt-32">
-            <thead><tr><th>階段</th><th>地支</th><th>原局出現</th><th>狀態</th></tr></thead>
+          <table class="data-table">
+            <thead><tr><th>地支</th><th>階段</th><th>原局</th></tr></thead>
             <tbody>
-              <tr><td>長生</td><td>酉</td><td>年支＋時支</td><td>己土長生在酉——雙酉代表日主有「長生」之根但被食傷覆蓋</td></tr>
-              <tr><td>沐浴</td><td>申</td><td>—</td><td></td></tr>
-              <tr><td>冠帶</td><td>未</td><td>—</td><td></td></tr>
-              <tr><td>臨官</td><td>午</td><td>—</td><td></td></tr>
-              <tr><td>帝旺</td><td>巳</td><td>—</td><td></td></tr>
-              <tr><td>衰</td><td>辰</td><td>—</td><td></td></tr>
-              <tr><td>病</td><td>卯</td><td>日支</td><td>己土病在卯——日支帶病＝身體根基有弱點</td></tr>
-              <tr><td>死</td><td>寅</td><td>—</td><td></td></tr>
-              <tr><td>墓</td><td>丑</td><td>月支</td><td>己土墓在丑——月令入墓＝能量被收藏</td></tr>
-              <tr><td>絕</td><td>子</td><td>—</td><td></td></tr>
-              <tr><td>胎</td><td>亥</td><td>—</td><td></td></tr>
-              <tr><td>養</td><td>戌</td><td>—</td><td></td></tr>
+              <tr><td>巳</td><td>帝旺</td><td>年支</td></tr>
+              <tr><td>丑</td><td>墓</td><td>月支</td></tr>
+              <tr><td>卯</td><td>病</td><td>日支</td></tr>
+              <tr><td>酉</td><td>長生</td><td>時支</td></tr>
             </tbody>
           </table>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- SECTION 3: STAR MANSIONS -->
-        <!-- ============================================================ -->
-        <div id="sec-xingxiu" class="section-title reveal mt-32">三、星宿數據</div>
-        <div class="section-subtitle reveal">二十八宿 · 中國天文</div>
-
         <div class="card reveal">
           <div class="card-header">
-            <div class="card-icon">&#x2729;</div>
-            <div><div class="card-title">生命星宿</div></div>
+            <div class="card-icon">&#x27F3;</div>
+            <div><div class="card-title">大運（男命 · 辛巳年 · 陰干逆排）</div></div>
           </div>
+          <table class="data-table">
+            <thead><tr><th>歲數</th><th>年份</th><th>大運</th><th>天干十神</th><th>地支十神</th></tr></thead>
+            <tbody>
+              <tr><td>2</td><td>2003</td><td>庚子</td><td>傷官</td><td>偏財</td></tr>
+              <tr><td>12</td><td>2013</td><td>己亥</td><td>比肩</td><td>正財</td></tr>
+              <tr style="background:var(--accent-dim);"><td><strong>22</strong></td><td><strong>2023</strong></td><td><strong>戊戌</strong></td><td><strong>劫財 ✓</strong></td><td><strong>燥土 ✓✓</strong></td></tr>
+              <tr><td>32</td><td>2033</td><td>丁酉</td><td>偏印 ✓</td><td>食神 ✗</td></tr>
+              <tr><td>42</td><td>2043</td><td>丙申</td><td>正印 ✓✓</td><td>傷官 ✗</td></tr>
+              <tr><td>52</td><td>2053</td><td>乙未</td><td>七殺 △</td><td>比肩</td></tr>
+              <tr><td>62</td><td>2063</td><td>甲午</td><td>正官 △</td><td>偏印</td></tr>
+              <tr><td>72</td><td>2073</td><td>癸巳</td><td>偏財</td><td>正印</td></tr>
+            </tbody>
+          </table>
+          <p class="mt-32" style="font-size:0.85rem; color:var(--text-muted);"><strong>而家行緊戊戌大運（22–31歲）：</strong>天干戊土劫財幫身＋地支戌土燥土幫身＝天干地支都幫你。呢步大運係你而家嘅保護網。</p>
+        </div>
+
+        <!-- ======================== STAR MANSIONS ======================== -->
+        <div id="sec-xingxiu" class="section-title reveal mt-32">三、星宿</div>
+
+        <div class="card reveal">
           <table class="data-table">
             <thead><tr><th>項目</th><th>數據</th></tr></thead>
             <tbody>
-              <tr><td>生命星宿</td><td><strong>斗宿（北斗七星）</strong></td></tr>
-              <tr><td>星宿類型</td><td>逆轉黑馬型</td></tr>
-              <tr><td>核心特質</td><td>前半生辛苦、後半生逆轉。慢慢行到前面——馬拉松型而非爆發型</td></tr>
-              <tr><td>所在柱位</td><td>時柱（代表後半生）</td></tr>
-              <tr><td>出生星宿</td><td>角宿</td></tr>
-              <tr><td>星宿關係</td><td>「友衰」關係（角宿→斗宿）</td></tr>
+              <tr><td>生命星宿</td><td><strong>斗宿</strong>（逆轉黑馬型）</td></tr>
+              <tr><td>值日星宿</td><td><strong>亢宿</strong></td></tr>
+              <tr><td>所在柱位</td><td>時柱（後半生發力）</td></tr>
             </tbody>
           </table>
         </div>
 
-        <div class="card reveal">
-          <div class="card-header">
-            <div class="card-icon">&#x2729;</div>
-            <div><div class="card-title">星宿特質一覽</div></div>
-          </div>
-          <table class="data-table">
-            <thead><tr><th>星宿</th><th>特質</th><th>關鍵詞</th></tr></thead>
-            <tbody>
-              <tr><td>角宿</td><td>溫和、有魅力、有藝術天賦。外表柔和但內在有力量</td><td>溫和 · 魅力 · 藝術</td></tr>
-              <tr><td><strong>斗宿（生命星宿）</strong></td><td>逆轉型——前半生默默行，後半生突然見到成果。唔係爆發型而係馬拉松型</td><td>逆轉 · 韌性 · 慢熱</td></tr>
-            </tbody>
-          </table>
-        </div>
+        <!-- ======================== PROGRESSIONS ======================== -->
+        <div id="sec-prog" class="section-title reveal mt-32">四、推運</div>
 
-        <!-- ============================================================ -->
-        <!-- SECTION 4: PROGRESSIONS & TRANSITS -->
-        <!-- ============================================================ -->
-        <div id="sec-prog" class="section-title reveal mt-32">四、推運數據</div>
-        <div class="section-subtitle reveal">太陽弧 · 次限 · 行運</div>
-
-        <!-- 4.1 Solar Arc -->
         <div class="card reveal">
           <div class="card-header">
             <div class="card-icon">&#x2609;</div>
-            <div><div class="card-title">太陽弧 Solar Arc Directions（2026 年）</div></div>
+            <div><div class="card-title">太陽弧 Solar Arc（2026 年）</div></div>
           </div>
           <table class="data-table">
-            <thead><tr><th>推運行星</th><th>推運位置</th><th>合相本命</th><th>容許度</th><th>意義</th></tr></thead>
+            <thead><tr><th>推運</th><th>位置</th><th>合相本命</th><th>容許度</th></tr></thead>
             <tbody>
-              <tr><td><strong>SA 太陽</strong></td><td>水瓶 12°58'</td><td>&#x263D; 本命月亮（蟹 12°51'）</td><td>0°07'</td><td>自我同情感對齊＝內在整合</td></tr>
-              <tr><td>SA 月亮</td><td>雙魚 9°39'</td><td>—</td><td>—</td><td>情感需求進入新階段</td></tr>
-              <tr><td>SA 水星</td><td>水瓶 7°47'</td><td>&#x2640; 本命金星（摩 7°43'）</td><td>0°04'</td><td>思維同價值觀對話</td></tr>
-              <tr><td>SA 金星</td><td>水瓶 4°31'</td><td>&#x2645; 本命天王星（瓶 4°17'）</td><td>0°14'</td><td>價值觀突變</td></tr>
-              <tr><td>SA 木星</td><td>獅子 12°37'</td><td>本命 ASC（獅 12°16'）</td><td>0°21'</td><td>信念進入外在自我</td></tr>
-              <tr><td>SA 土星</td><td>巨蟹 20°37'</td><td>&#x260B; 本命南交點（獅 18°17'）</td><td>2°20'</td><td>結構同舊模式對話</td></tr>
-              <tr><td>SA ASC</td><td>天蠍 9°04'</td><td>本命 IC（蠍 9°53'）</td><td>0°49'</td><td>外在自我同根源對話</td></tr>
+              <tr><td><strong>SA 月亮</strong></td><td>摩羯 ~21°</td><td><strong>本命太陽 21°4'</strong></td><td><strong>~0°28'</strong></td></tr>
+              <tr><td>SA 月亮</td><td>摩羯 ~21°</td><td>本命金星 20°21'</td><td>~1°</td></tr>
+              <tr><td>SA ASC</td><td>處女 ~7°</td><td>本命 MC 9°53'</td><td>~3°</td></tr>
             </tbody>
           </table>
-          <p class="mt-32" style="font-size:0.85rem; color: var(--text-muted);"><strong>最關鍵：SA 太陽合本命月亮（0°07'）</strong>— 呢個係 2026 年最深層嘅能量轉變。你嘅「自我」同「情感需求」開始對齊。呢個過程你自己未必感受到——但你會慢慢覺得「我知自己要咩」。</p>
         </div>
 
-        <!-- 4.2 Secondary Progressions -->
         <div class="card reveal">
           <div class="card-header">
             <div class="card-icon">&#x263D;</div>
             <div><div class="card-title">次限 Secondary Progressions</div></div>
           </div>
           <table class="data-table">
-            <thead><tr><th>次限行星</th><th>次限位置</th><th>本命位置</th><th>變化</th></tr></thead>
+            <thead><tr><th>次限行星</th><th>位置</th><th>變化</th></tr></thead>
             <tbody>
-              <tr><td><strong>次限太陽</strong></td><td>水瓶 15°49'</td><td>摩羯 6°59'</td><td>由摩羯轉入水瓶——身份認同轉變</td></tr>
-              <tr><td>次限月亮</td><td>雙魚 17°05'</td><td>巨蟹 12°51'</td><td>由巨蟹轉入雙魚——情感模式深化</td></tr>
-              <tr><td>次限水星</td><td>水瓶 10°24'</td><td>水瓶 10°03'</td><td>幾乎停留原位——思維模式穩定</td></tr>
-              <tr><td>次限金星</td><td>水瓶 9°09'</td><td>摩羯 7°43'</td><td>由摩羯轉入水瓶——價值觀獨立化</td></tr>
-              <tr><td>次限火星</td><td>雙魚 18°34'</td><td>雙魚 16°40'</td><td>仍在雙魚——行動力模式穩定</td></tr>
+              <tr><td>次限太陽</td><td>水瓶 ~16°</td><td>由摩羯入水瓶——身份認同轉變</td></tr>
+              <tr><td>次限金星</td><td>水瓶 ~20°</td><td>由摩羯入水瓶——價值觀獨立化</td></tr>
             </tbody>
           </table>
         </div>
 
-        <!-- 4.3 Current Transits Summary -->
-        <div class="card reveal">
+        <!-- ======================== SUMMARY ======================== -->
+        <div class="card reveal mt-32" style="border-color:var(--accent); border-width:2px;">
           <div class="card-header">
-            <div class="card-icon">&#x2644;</div>
-            <div><div class="card-title">當前行運摘要（2026 年中）</div></div>
-          </div>
-          <table class="data-table">
-            <thead><tr><th>行運行星</th><th>位置</th><th>影響</th></tr></thead>
-            <tbody>
-              <tr><td>行運木星</td><td>巨蟹（回歸本命位置）</td><td>人脈重新激活、歸屬感增強</td></tr>
-              <tr><td>行運土星</td><td>白羊</td><td>四分本命土星＝事業壓力測試</td></tr>
-              <tr><td>行運天王星</td><td>金牛</td><td>合本命 MC＝事業突變可能</td></tr>
-              <tr><td>行運海王星</td><td>白羊</td><td>離開雙魚＝結束一個靈性週期</td></tr>
-              <tr><td>行運冥王星</td><td>水瓶</td><td>進入本命 7 宮＝伴侶關係深層轉化</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- ============================================================ -->
-        <!-- SUMMARY -->
-        <!-- ============================================================ -->
-        <div class="card reveal mt-32" style="border-color: var(--accent); border-width: 2px;">
-          <div class="card-header">
-            <div class="card-icon" style="background: var(--accent-glow);">&#x2726;</div>
+            <div class="card-icon" style="background:var(--accent-glow);">&#x2726;</div>
             <div><div class="card-title">數據摘要</div></div>
           </div>
-          <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
             <table class="data-table">
-              <thead><tr><th colspan="2">星盤核心數字</th></tr></thead>
+              <thead><tr><th colspan="2">星盤</th></tr></thead>
               <tbody>
                 <tr><td>ASC</td><td>獅子 12°16'</td></tr>
-                <tr><td>MC</td><td>金牛 9°53'</td></tr>
-                <tr><td>最強行星</td><td>火星（尊貴 6 分）</td></tr>
-                <tr><td>最弱行星</td><td>太陽（尊貴 1 分）</td></tr>
-                <tr><td>最強元素</td><td>風象 35.7%</td></tr>
-                <tr><td>最強模式</td><td>固定 52%</td></tr>
-                <tr><td>6 宮行星數</td><td>4 顆</td></tr>
-                <tr><td>飛星入 6 宮</td><td>5 條</td></tr>
+                <tr><td>最強尊貴</td><td>木星曜升（4分）</td></tr>
+                <tr><td>最弱尊貴</td><td>月亮遊星（0分）</td></tr>
+                <tr><td>最強元素</td><td>風 40%</td></tr>
+                <tr><td>最強模式</td><td>變動 40%</td></tr>
+                <tr><td>最 tight 相位</td><td>土星三分海王星（0°55'）</td></tr>
+                <tr><td>核心互溶</td><td>月亮射手⟷木星巨蟹</td></tr>
               </tbody>
             </table>
             <table class="data-table">
-              <thead><tr><th colspan="2">八字核心數字</th></tr></thead>
+              <thead><tr><th colspan="2">八字</th></tr></thead>
               <tbody>
-                <tr><td>日主</td><td>己土（陰土）</td></tr>
-                <tr><td>生月</td><td>丑月（冬月濕土）</td></tr>
-                <tr><td>最旺十神</td><td>食神 5 次（33%）</td></tr>
-                <tr><td>缺席十神</td><td>正印·偏印·正官·正財</td></tr>
-                <tr><td>三合</td><td>巳酉丑三合金局</td></tr>
-                <tr><td>六沖</td><td>卯酉沖</td></tr>
-                <tr><td>自刑</td><td>酉酉自刑</td></tr>
-                <tr><td>靈性標記</td><td>華蓋＋太極＋童子</td></tr>
+                <tr><td>四柱</td><td>辛巳·辛丑·己卯·癸酉</td></tr>
+                <tr><td>納音</td><td>白蠟金</td></tr>
+                <tr><td>日主</td><td>己土（身弱）</td></tr>
+                <tr><td>喜用</td><td>火、土</td></tr>
+                <tr><td>最旺</td><td>食傷 5次（33%）</td></tr>
+                <tr><td>正印</td><td>1次（巳藏丙·極弱）</td></tr>
+                <tr><td>缺席</td><td>偏印·正官·正財</td></tr>
+                <tr><td>而家大運</td><td>戊戌（22–31歲）</td></tr>
               </tbody>
             </table>
           </div>
@@ -739,12 +475,8 @@
 
       </div>
     </main>
-
-    <footer class="footer">
-      <p>人生地圖 · 原始數據</p>
-    </footer>
+    <footer class="footer"><p>人生地圖 · 原始數據</p></footer>
   </div>
-
   <script src="js/app.js"></script>
 </body>
 </html>
