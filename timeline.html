@@ -30,7 +30,9 @@
     <ul class="nav-links"></ul>
     <div class="nav-controls">
       <button class="theme-toggle" id="themeToggle" title="切換深淺色">&#x2600;</button>
-      <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
@@ -47,336 +49,409 @@
           <h1>你嘅時間線</h1>
         </div>
 
-        <!-- ============================================================ -->
-        <!-- VISUAL TIMELINE BAR -->
-        <!-- ============================================================ -->
-        <div class="card reveal" style="border-color:var(--accent); border-width:2px;">
-          <div class="card-header">
-            <div class="card-icon" style="background:var(--accent-glow);">&#x2726;</div>
-            <div><div class="card-title">你而家喺邊度</div></div>
-          </div>
-
-          <!-- Timeline Bar -->
-          <div style="position:relative; padding:32px 0 48px;">
-            <!-- Bar -->
-            <div style="height:6px; background:var(--border); border-radius:3px; position:relative;">
-              <div style="position:absolute; left:0; top:0; height:100%; width:33%; background:var(--accent); border-radius:3px;"></div>
-            </div>
-            <!-- Markers -->
-            <div style="display:flex; justify-content:space-between; margin-top:8px; font-size:0.7rem; color:var(--text-muted);">
-              <span>22歲 2023</span>
-              <span style="color:var(--accent); font-weight:600;">← 你喺度（25歲）</span>
-              <span>31歲 2032</span>
-            </div>
-          </div>
-
-          <!-- 4 System Tags -->
-          <div class="tag-row" style="margin-bottom:16px;">
-            <span class="tag" style="border-color:var(--accent);">八字大運：戊戌（全面幫身）</span>
-            <span class="tag" style="border-color:var(--accent);">法達：木＞太（保護＋自我激活）</span>
-          </div>
-          <div class="tag-row">
-            <span class="tag" style="border-color:var(--accent);">太陽弧：SA月亮合本命太陽 0°28'</span>
-            <span class="tag" style="border-color:var(--accent);">日返：7/12宮主飛8宮（深層轉化）</span>
-          </div>
+        <!-- Section Tabs -->
+        <div class="tabs reveal">
+          <button class="tab-btn active" data-tab="sec-decade">22–31 歲逐年</button>
+          <button class="tab-btn" data-tab="sec-18mo">18 個月預測</button>
+          <button class="tab-btn" data-tab="sec-overview">大運總覽</button>
         </div>
+        <div class="tab-panels">
 
-        <!-- ============================================================ -->
-        <!-- COLLAPSIBLE: 4-SYSTEM DATA -->
-        <!-- ============================================================ -->
-        <div class="card reveal">
-          <div class="card-header">
-            <div class="card-icon">&#x25C8;</div>
-            <div><div class="card-title">四個系統交叉驗證</div></div>
-          </div>
+          <!-- ==================== DECADE TAB ==================== -->
+          <div class="tab-panel active" data-panel="sec-decade">
 
-          <div class="expandable">
-            <button class="expandable-trigger">
-              <span>八字大運：戊戌（22–31歲）</span>
-              <span class="chevron">&#x25BC;</span>
-            </button>
-            <div class="expandable-content"><div class="expandable-inner">
+            <div class="section-title reveal">22–31 歲逐年拆解</div>
+            <div class="section-subtitle reveal">戊戌大運 · 2023–2032 · 天干地支都幫身</div>
+
+            <div class="card reveal" style="border-color:var(--accent); border-width:2px;">
+              <div class="card-header">
+                <div class="card-icon" style="background:var(--accent-glow);">&#x2726;</div>
+                <div><div class="card-title">呢步大運嘅底層邏輯</div></div>
+              </div>
+              <p><strong>你而家行緊嘅戊戌大運，天干戊土（劫財）＋地支戌土（燥土）兩個都幫你。</strong></p>
+              <p class="mt-32">同丁酉大運唔同——丁酉係天干保護但地支消耗，而戊戌係全面幫身。你嘅日主己土得呢步大運嘅保護，由孤立無援變成有人企喺你身邊。</p>
+              <p class="mt-32">但「幫身」唔等於「冇挑戰」——呢步大運入面仍然有火年同金年嘅交替，有高峰有低谷。</p>
+            </div>
+
+            <!-- 2023 -->
+            <div class="card reveal">
+              <div class="card-header">
+                <div class="card-icon">&#x25C6;</div>
+                <div>
+                  <div class="card-number">2023 · 22 歲</div>
+                  <div class="card-title">癸卯年 — 大運入門</div>
+                </div>
+                <div class="stars" style="margin-left:auto;">&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;</span></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">癸水偏財</span>
+                <span class="tag">卯木七殺</span>
+                <span class="tag">戊癸合化火</span>
+              </div>
+              <p>你開始行戊戌大運嘅第一年。天干癸水（偏財）被大運天干戊土合化火——忌神被化為用神。呢年你可能經歷一個「由舊轉新」嘅過程——畢業、搬遷、或者人生方向嘅轉變。卯木七殺代表有壓力，但呢個壓力帶有「催化劑」嘅作用。</p>
+            </div>
+
+            <!-- 2024 -->
+            <div class="card reveal">
+              <div class="card-header">
+                <div class="card-icon">&#x25C6;</div>
+                <div>
+                  <div class="card-number">2024 · 23 歲</div>
+                  <div class="card-title">甲辰年 — 正官出現</div>
+                </div>
+                <div class="stars" style="margin-left:auto;">&#x2605;&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;</span></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">甲木正官</span>
+                <span class="tag">辰土劫財</span>
+                <span class="tag">甲己合土</span>
+              </div>
+              <p><strong>甲己合土＝正官合日主。</strong> 正官係你原局完全缺席嘅五行——第一次出現代表一個「新框架」進入你生命。你可能開始一份正式工作、進入一個有結構嘅環境。大運戊土幫你頂住競爭。</p>
+            </div>
+
+            <!-- 2025 -->
+            <div class="card reveal">
+              <div class="card-header">
+                <div class="card-icon">&#x25C6;</div>
+                <div>
+                  <div class="card-number">2025 · 24 歲</div>
+                  <div class="card-title">乙巳年 — 殺印相生</div>
+                </div>
+                <div class="stars" style="margin-left:auto;">&#x2605;&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;</span></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">乙木七殺</span>
+                <span class="tag">巳火正印</span>
+                <span class="tag">殺印相生</span>
+              </div>
+              <p><strong>殺印相生——壓力轉化為學習力。</strong> 乙木七殺帶嚟壓力，但巳火正印（同時係你嘅用神）將壓力轉化為保護同學習。呢年你嘅工作環境可能有壓力——但呢啲壓力會迫你學新嘢。巳火同時係年支回歸——你嘅根基被激活。</p>
+            </div>
+
+            <!-- 2026 -->
+            <div class="card reveal" style="border-color:var(--accent); border-width:2px;">
+              <div class="card-header">
+                <div class="card-icon" style="background:var(--accent-glow);">&#x2605;</div>
+                <div>
+                  <div class="card-number">2026 · 25 歲 · 高峰</div>
+                  <div class="card-title">丙午年 — 雙印到位</div>
+                </div>
+                <div class="stars" style="margin-left:auto;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+              </div>
+              <div class="tag-row">
+                <span class="tag" style="border-color:var(--accent);">丙火正印</span>
+                <span class="tag" style="border-color:var(--accent);">午火偏印</span>
+                <span class="tag" style="border-color:var(--accent);">戊戌＋丙午＝火土大旺</span>
+              </div>
+              <p><strong>呢步大運入面用神最強嘅一年。</strong> 大運戊戌（土）＋流年丙午（火）＝火土大旺——正好係你嘅喜用神。丙火正印到位代表保護力最強。如果喺呢年考試，通過嘅機會最高。</p>
+              <div class="expandable mt-32">
+                <button class="expandable-trigger"><span>逐月重點</span><span class="chevron">&#x25BC;</span></button>
+                <div class="expandable-content">
+                  <div class="expandable-inner">
+                    <table class="data-table">
+                      <thead><tr><th>月份</th><th>流月</th><th>評級</th><th>重點</th></tr></thead>
+                      <tbody>
+                        <tr><td>5月</td><td>甲午</td><td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td><td>溫書效率最高——甲己合土＋火氣最旺</td></tr>
+                        <tr><td>6月</td><td>乙未</td><td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2606;</td><td>殺印相生＋未土幫身</td></tr>
+                        <tr><td>7月</td><td>丙申</td><td>&#x2605;&#x2605;&#x2605;&#x2606;&#x2606;</td><td>丙火正印但申金消耗——開始收</td></tr>
+                        <tr style="background:rgba(231,76,60,0.08);"><td><strong>8月</strong></td><td><strong>丁酉</strong></td><td>&#x2605;&#x2605;&#x2606;&#x2606;&#x2606;</td><td><strong>考試月——金旺消耗大但大運戊戌幫你頂</strong></td></tr>
+                        <tr style="background:var(--accent-dim);"><td><strong>9月</strong></td><td><strong>戊戌</strong></td><td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td><td><strong>回血月——雙戊戌最強保護</strong></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2027 -->
+            <div class="card reveal" style="border-color:var(--accent); border-width:2px;">
+              <div class="card-header">
+                <div class="card-icon" style="background:var(--accent-glow);">&#x2605;</div>
+                <div>
+                  <div class="card-number">2027 · 26 歲 · 最佳年</div>
+                  <div class="card-title">丁未年 — 火土齊到</div>
+                </div>
+                <div class="stars" style="margin-left:auto;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
+              </div>
+              <div class="tag-row">
+                <span class="tag" style="border-color:var(--accent);">丁火偏印</span>
+                <span class="tag" style="border-color:var(--accent);">未土比肩</span>
+              </div>
+              <p><strong>呢步大運入面全面最佳嘅一年。</strong> 大運戊戌（土）＋流年丁未（火土）＝火土大旺。丁火偏印提供保護，未土比肩提供幫身力量。同時未戌刑代表有變動——但偏向正面。</p>
+            </div>
+
+            <!-- 2028 -->
+            <div class="card reveal">
+              <div class="card-header">
+                <div class="card-icon">&#x25C6;</div>
+                <div>
+                  <div class="card-number">2028 · 27 歲</div>
+                  <div class="card-title">戊申年 — 回落</div>
+                </div>
+                <div class="stars" style="margin-left:auto;">&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;</span></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">戊土劫財</span>
+                <span class="tag">申金傷官</span>
+              </div>
+              <p>天干戊土（大運同流年都係戊土＝幫身加倍）但地支申金（傷官消耗）。由 2026–2027 嘅高峰期回到正常。呢年你要學嘅學嘅嘢係「喺唔完美嘅環境下繼續行」。</p>
+            </div>
+
+            <!-- 2029 -->
+            <div class="card reveal">
+              <div class="card-header">
+                <div class="card-icon">&#x26A0;</div>
+                <div>
+                  <div class="card-number">2029 · 28 歲 · 最辛苦</div>
+                  <div class="card-title">己酉年 — 食傷峰值</div>
+                </div>
+                <div class="stars" style="margin-left:auto;">&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;&#x2605;</span></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag" style="border-color:#e74c3c;">己土比肩</span>
+                <span class="tag" style="border-color:#e74c3c;">酉金食神</span>
+              </div>
+              <p><strong>呢步大運入面最辛苦嘅一年。</strong> 流年酉金激活原局兩個酉——食傷力量到達峰值。同時酉酉自刑加劇消耗，卯酉沖觸發配偶宮動盪。但好消息係：大運戊戌仍然幫你。天干己土比肩幫身＋大運戊土＝你嘅根基比之前穩。你會攰但你唔會倒。</p>
+            </div>
+
+            <!-- 2030 -->
+            <div class="card reveal">
+              <div class="card-header">
+                <div class="card-icon">&#x25C6;</div>
+                <div>
+                  <div class="card-number">2030 · 29 歲</div>
+                  <div class="card-title">庚戌年 — 恢復</div>
+                </div>
+                <div class="stars" style="margin-left:auto;">&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;</span></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">庚金傷官</span>
+                <span class="tag">戌土劫財</span>
+              </div>
+              <p>三重酉消退。地支戌土回歸大運嘅保護力量。你嘅體力開始恢復。重新整理之前幾年嘅工作成果、更新專業知識、為下一個階段做準備。</p>
+            </div>
+
+            <!-- 2031 -->
+            <div class="card reveal">
+              <div class="card-header">
+                <div class="card-icon">&#x25C6;</div>
+                <div>
+                  <div class="card-number">2031 · 30 歲</div>
+                  <div class="card-title">辛亥年 — 食傷生財</div>
+                </div>
+                <div class="stars" style="margin-left:auto;">&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;</span></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">辛金食神</span>
+                <span class="tag">亥水正財</span>
+              </div>
+              <p><strong>進入 30 代。</strong> 食傷生財鏈全速運行——忙碌但有回報。你嘅收入可能有明顯提升。但花費同時增加——呢年要留意唔好月月清。</p>
+            </div>
+
+            <!-- 2032 -->
+            <div class="card reveal">
+              <div class="card-header">
+                <div class="card-icon">&#x25C6;</div>
+                <div>
+                  <div class="card-number">2032 · 31 歲</div>
+                  <div class="card-title">壬子年 — 大運最後一年</div>
+                </div>
+                <div class="stars" style="margin-left:auto;">&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;&#x2605;</span></div>
+              </div>
+              <div class="tag-row">
+                <span class="tag">壬水正財</span>
+                <span class="tag">子水偏財</span>
+              </div>
+              <p><strong>戊戌大運嘅最後一年。</strong> 雙水齊到＝財旺但身弱 hold 唔住。呢年你要學嘅嘢係「唔係所有機會都要接」——選擇比努力重要。回顧呢 10 年做咗咩、整理資源——為 32 歲丁酉大運做好準備。</p>
+            </div>
+
+            <!-- Decade Summary -->
+            <div class="card reveal">
+              <div class="card-header">
+                <div class="card-icon">&#x2726;</div>
+                <div><div class="card-title">22–31 歲一覽表</div></div>
+              </div>
               <table class="data-table">
-                <thead><tr><th>項目</th><th>數據</th></tr></thead>
+                <thead><tr><th>年</th><th>歲</th><th>流年</th><th>評級</th><th>核心</th></tr></thead>
                 <tbody>
-                  <tr><td>大運</td><td><strong>戊戌</strong>（22–31歲 · 2023–2032）</td></tr>
-                  <tr><td>天干</td><td>戊土（劫財）——幫身</td></tr>
-                  <tr><td>地支</td><td>戌土（燥土）——幫身</td></tr>
-                  <tr><td>狀態</td><td>天干＋地支都幫你＝全面幫身</td></tr>
-                  <tr><td>下一大運</td><td>丁酉（32–41歲）＝偏印保護＋食神消耗</td></tr>
+                  <tr><td>2023</td><td>22</td><td>癸卯</td><td>&#x2605;&#x2605;&#x2605;&#x2606;&#x2606;</td><td>大運入門 · 戊癸合火</td></tr>
+                  <tr><td>2024</td><td>23</td><td>甲辰</td><td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2606;</td><td>正官出現 · 新框架</td></tr>
+                  <tr><td>2025</td><td>24</td><td>乙巳</td><td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2606;</td><td>殺印相生 · 打底</td></tr>
+                  <tr style="background:var(--accent-dim);"><td><strong>2026</strong></td><td><strong>25</strong></td><td><strong>丙午</strong></td><td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td><td><strong>雙印到位 · 考試高峰</strong></td></tr>
+                  <tr style="background:var(--accent-dim);"><td><strong>2027</strong></td><td><strong>26</strong></td><td><strong>丁未</strong></td><td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td><td><strong>火土齊到 · 全面最佳</strong></td></tr>
+                  <tr><td>2028</td><td>27</td><td>戊申</td><td>&#x2605;&#x2605;&#x2605;&#x2606;&#x2606;</td><td>回落 · 正常年</td></tr>
+                  <tr style="background:rgba(231,76,60,0.08);"><td>2029</td><td>28</td><td>己酉</td><td>&#x2605;&#x2605;&#x2606;&#x2606;&#x2606;</td><td>食傷峰值 · 撐住</td></tr>
+                  <tr><td>2030</td><td>29</td><td>庚戌</td><td>&#x2605;&#x2605;&#x2605;&#x2606;&#x2606;</td><td>恢復 · 抖氣</td></tr>
+                  <tr><td>2031</td><td>30</td><td>辛亥</td><td>&#x2605;&#x2605;&#x2605;&#x2606;&#x2606;</td><td>食傷生財 · 進入30代</td></tr>
+                  <tr><td>2032</td><td>31</td><td>壬子</td><td>&#x2605;&#x2605;&#x2606;&#x2606;&#x2606;</td><td>大運最後一年</td></tr>
                 </tbody>
               </table>
-            </div></div>
+            </div>
+
+            <!-- Story Arc -->
+            <div class="card reveal">
+              <div class="card-header">
+                <div class="card-icon">&#x2726;</div>
+                <div><div class="card-title">22–31 歲嘅故事線</div></div>
+              </div>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-year">22–24 歲 · 入門期</div>
+                  <div class="timeline-desc">大運戊戌幫身開始生效。正官出現（新框架）、殺印相生（壓力轉化為學習）。</div>
+                </div>
+                <div class="timeline-item" style="border-left-color:var(--accent);">
+                  <div class="timeline-dot" style="background:var(--accent); border-color:var(--accent);"></div>
+                  <div class="timeline-year" style="color:var(--accent);">25–26 歲 · 黃金期</div>
+                  <div class="timeline-desc">丙午＋丁未＝火土大旺。呢兩年係你呢步大運入面最有資源做嘢嘅窗口。</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-year">27–28 歲 · 回落期</div>
+                  <div class="timeline-desc">由高峰回落。2029 食傷峰值最辛苦。但大運戊戌仍然幫你。</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-year">29–31 歲 · 收尾期</div>
+                  <div class="timeline-desc">恢復、食傷生財、準備轉換大運。</div>
+                </div>
+              </div>
+            </div>
+
           </div>
 
-          <div class="expandable">
-            <button class="expandable-trigger">
-              <span>法達盤：木＞太（2025.6–2027.3）</span>
-              <span class="chevron">&#x25BC;</span>
-            </button>
-            <div class="expandable-content"><div class="expandable-inner">
+          <!-- ==================== 18-MONTH TAB ==================== -->
+          <div class="tab-panel" data-panel="sec-18mo">
+
+            <div class="section-title reveal">18 個月預測</div>
+            <div class="section-subtitle reveal">2026 年 5 月 → 2027 年 11 月</div>
+
+            <div class="card reveal">
+              <div class="card-header">
+                <div class="card-icon">&#x2726;</div>
+                <div><div class="card-title">底層結構</div></div>
+              </div>
+              <p>呢 18 個月行緊：<strong>戊戌大運</strong>（全面幫身）＋<strong>丙午→丁未流年</strong>（雙用神年）＋<strong>法達木>太</strong>（木星保護＋太陽自我激活）。</p>
+              <p class="mt-32">18 個月唔係直線——而係一個波浪。兩個高峰（2026年5–6月同2027年5–6月）同兩個低谷（2026年8月同12月、2027年8月同10–11月）。</p>
+              <p class="mt-32">好消息：大運戊戌一直幫你。就算流月唔好，大運都係你嘅保護網。</p>
+            </div>
+
+            <!-- Month by Month -->
+            <div class="card reveal">
+              <div class="card-header">
+                <div class="card-icon">&#x25C8;</div>
+                <div><div class="card-title">逐月一覽</div></div>
+              </div>
               <table class="data-table">
-                <thead><tr><th>項目</th><th>數據</th></tr></thead>
+                <thead><tr><th>月份</th><th>流月</th><th>評級</th><th>核心</th></tr></thead>
                 <tbody>
-                  <tr><td>大時主</td><td><strong>木星</strong>（2022–2034）——本命巨蟹 11 宮曜升 · 互溶月亮</td></tr>
-                  <tr><td>細限</td><td><strong>太陽</strong>（2025.6.17–2027.3.5）——本命摩羯 6 宮 · 被土星＋火星接納</td></tr>
-                  <tr><td>組合意義</td><td>木星保護＋太陽自我意識被激活。你嘅「我係邊個」喺木星嘅保護下被重新定義</td></tr>
-                  <tr><td>下一個細限</td><td>木＞金（2027.3–2028.11）＝價值觀同愛嘅議題浮現</td></tr>
+                  <tr><td>2026/5</td><td>甲午</td><td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td><td>溫書效率最高</td></tr>
+                  <tr><td>2026/6</td><td>乙未</td><td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2606;</td><td>殺印相生＋未土幫身</td></tr>
+                  <tr><td>2026/7</td><td>丙申</td><td>&#x2605;&#x2605;&#x2605;&#x2606;&#x2606;</td><td>開始收</td></tr>
+                  <tr style="background:rgba(231,76,60,0.08);"><td><strong>2026/8</strong></td><td><strong>丁酉</strong></td><td>&#x2605;&#x2605;&#x2606;&#x2606;&#x2606;</td><td><strong>考試月——大運戊戌幫你頂</strong></td></tr>
+                  <tr style="background:var(--accent-dim);"><td><strong>2026/9</strong></td><td><strong>戊戌</strong></td><td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td><td><strong>回血——雙戊戌最強保護</strong></td></tr>
+                  <tr><td>2026/10</td><td>己亥</td><td>&#x2605;&#x2605;&#x2605;&#x2606;&#x2606;</td><td>處理屋企嘅事</td></tr>
+                  <tr><td>2026/11</td><td>庚子前</td><td>&#x2605;&#x2605;&#x2605;&#x2606;&#x2606;</td><td>旅行安排上半月</td></tr>
+                  <tr style="background:rgba(231,76,60,0.08);"><td>2026/12</td><td>庚子</td><td>&#x2605;&#x2606;&#x2606;&#x2606;&#x2606;</td><td>年尾最差——金水齊到</td></tr>
+                  <tr><td>2027/1</td><td>壬寅</td><td>&#x2605;&#x2605;&#x2605;&#x2606;&#x2606;</td><td>接受內在變化</td></tr>
+                  <tr><td>2027/2</td><td>癸卯</td><td>&#x2605;&#x2605;&#x2606;&#x2606;&#x2606;</td><td>情緒波動——由佢</td></tr>
+                  <tr><td>2027/3</td><td>甲辰</td><td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2606;</td><td>新機會出現</td></tr>
+                  <tr><td>2027/4</td><td>乙巳</td><td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2606;</td><td>人脈回歸</td></tr>
+                  <tr style="background:var(--accent-dim);"><td><strong>2027/5</strong></td><td><strong>丙午</strong></td><td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td><td><strong>火氣再現——開始新目標</strong></td></tr>
+                  <tr style="background:var(--accent-dim);"><td><strong>2027/6</strong></td><td><strong>丁未</strong></td><td>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</td><td><strong>18月之冠——做任何重大決定</strong></td></tr>
+                  <tr><td>2027/7</td><td>戊申</td><td>&#x2605;&#x2605;&#x2606;&#x2606;&#x2606;</td><td>接受回落</td></tr>
+                  <tr style="background:rgba(231,76,60,0.08);"><td><strong>2027/8</strong></td><td><strong>己酉</strong></td><td>&#x2605;&#x2606;&#x2606;&#x2606;&#x2606;</td><td><strong>三重酉再現——你上次捱過咗</strong></td></tr>
+                  <tr><td>2027/9</td><td>庚戌</td><td>&#x2605;&#x2605;&#x2605;&#x2606;&#x2606;</td><td>恢復</td></tr>
+                  <tr><td>2027/10-11</td><td>辛亥/壬子</td><td>&#x2605;&#x2606;&#x2606;&#x2606;&#x2606;</td><td>收爐——保護力減弱係暫時</td></tr>
                 </tbody>
               </table>
-            </div></div>
+            </div>
+
+            <div class="card reveal" style="border-color:var(--accent); border-width:2px;">
+              <div class="card-header">
+                <div class="card-icon" style="background:var(--accent-glow);">&#x2726;</div>
+                <div><div class="card-title">18 個月你要記住嘅三件事</div></div>
+              </div>
+              <p><strong>第一：2026–2027 係你呢步大運入面最好嘅兩年。</strong> 丙午＋丁未流年＋戊戌大運＋法達木>太＝火土大旺＋木星保護＋太陽自我激活。</p>
+              <p class="mt-32"><strong>第二：大運戊戌一直保護緊你。</strong> 就算流月唔好（8月丁酉、12月庚子），大運嘅戊戌土仍然幫你頂住。</p>
+              <p class="mt-32"><strong>第三：你嘅事業時間表仍然係慢上坡。</strong> 呢 18 個月係播種期嘅一部分。你做嘅每一件事都係為咗 32 歲之後嘅丁酉大運做準備。</p>
+            </div>
+
           </div>
 
-          <div class="expandable">
-            <button class="expandable-trigger">
-              <span>太陽弧：SA月亮合本命太陽（0°28'）</span>
-              <span class="chevron">&#x25BC;</span>
-            </button>
-            <div class="expandable-content"><div class="expandable-inner">
+          <!-- ==================== OVERVIEW TAB ==================== -->
+          <div class="tab-panel" data-panel="sec-overview">
+
+            <div class="section-title reveal">大運總覽</div>
+            <div class="section-subtitle reveal">你嘅一生事業節奏</div>
+
+            <div class="card reveal">
+              <div class="card-header">
+                <div class="card-icon">&#x231B;</div>
+                <div><div class="card-title">大運排列</div></div>
+              </div>
               <table class="data-table">
-                <thead><tr><th>項目</th><th>數據</th></tr></thead>
+                <thead><tr><th>大運</th><th>歲數</th><th>天干</th><th>地支</th><th>狀態</th></tr></thead>
                 <tbody>
-                  <tr><td>推運</td><td><strong>SA月亮</strong>（摩羯 ~21°）</td></tr>
-                  <tr><td>合相</td><td><strong>本命太陽</strong>（摩羯 21°4'）</td></tr>
-                  <tr><td>容許度</td><td><strong>~0°28'</strong>（極 tight）</td></tr>
-                  <tr><td>意義</td><td>你嘅「情感需求」同「自我意識」開始對齊。呢個過程你自己未必感受到——但你會慢慢覺得「我知自己要咩」</td></tr>
-                  <tr><td>同時發生</td><td>SA月亮同時合本命金星（~1°）——情感同價值觀對話</td></tr>
+                  <tr style="background:var(--accent-dim);"><td><strong>而家</strong></td><td><strong>22–31</strong></td><td><strong>戊（劫財）</strong></td><td><strong>戌（燥土）</strong></td><td><strong>全面幫身</strong></td></tr>
+                  <tr><td>下一運</td><td>32–41</td><td>丁（偏印）</td><td>酉（食神）</td><td>有保護但有消耗</td></tr>
+                  <tr><td>第三運</td><td>42–51</td><td>丙（正印）</td><td>申（傷官）</td><td>正印到位——事業上升</td></tr>
+                  <tr><td>第四運</td><td>52–61</td><td>乙（七殺）</td><td>未（比肩）</td><td>殺印相生——穩固</td></tr>
+                  <tr><td>第五運</td><td>62–71</td><td>甲（正官）</td><td>午（偏印）</td><td>金神成器——巔峰</td></tr>
                 </tbody>
               </table>
-            </div></div>
-          </div>
-
-          <div class="expandable">
-            <button class="expandable-trigger">
-              <span>2026 日返盤：8 宮超重</span>
-              <span class="chevron">&#x25BC;</span>
-            </button>
-            <div class="expandable-content"><div class="expandable-inner">
-              <table class="data-table">
-                <thead><tr><th>項目</th><th>數據</th></tr></thead>
-                <tbody>
-                  <tr><td>日返 ASC</td><td>雙子 14°6'</td></tr>
-                  <tr><td>日返太陽</td><td>摩羯 21°4'（8 宮）</td></tr>
-                  <tr><td>8 宮行星</td><td>太陽、水星、金星、火星、冥王星（5 顆）</td></tr>
-                  <tr><td>飛入 8 宮</td><td>1、3、4、5、6、11、12 宮主（7/12 宮主）</td></tr>
-                  <tr><td>核心相位</td><td>太陽合金星合火星（三重合相）→ 對分木星巨蟹 2 宮</td></tr>
-                  <tr><td>意義</td><td>2026 年係深層轉化年。唔係表面嘅改變——而係底層結構嘅重組。8 宮＝死亡與重生、深層資源、共享財務</td></tr>
-                </tbody>
-              </table>
-            </div></div>
-          </div>
-
-          <!-- Cross Validation Summary -->
-          <div style="margin-top:24px; padding:20px; background:var(--accent-dim); border-radius:8px;">
-            <p style="font-size:0.95rem;"><strong>四個系統全部指向同一個主題：</strong></p>
-            <p class="mt-32" style="font-size:0.95rem;">八字話你而家全面幫身（戊戌）。法達話你喺木星保護下太陽被激活（木＞太）。太陽弧話你嘅情感同自我開始對齊（SA月亮合本命太陽）。日返話你今年做緊深層轉化（8宮超重）。</p>
-            <p class="mt-32" style="font-size:0.95rem;"><strong>呢個唔係巧合——呢個係四個唔同嘅系統同時講緊同一樣嘢。</strong></p>
-          </div>
-        </div>
-
-        <!-- ============================================================ -->
-        <!-- SECTION 1: MONTHS (18 個月) -->
-        <!-- ============================================================ -->
-        <div class="section-title reveal mt-32">逐月</div>
-        <div class="section-subtitle reveal">2026 年 5 月 → 2027 年 11 月</div>
-
-        <div class="card reveal">
-          <div class="card-header">
-            <div class="card-icon">&#x2726;</div>
-            <div><div class="card-title">18 個月嘅底層結構</div></div>
-          </div>
-          <p>呢 18 個月嘅能量組合：</p>
-          <div class="tag-row" style="margin:16px 0;">
-            <span class="tag">八字：戊戌大運（全面幫身）</span>
-            <span class="tag">法達：木＞太→木＞金（2027.3 轉換）</span>
-          </div>
-          <div class="tag-row" style="margin-bottom:16px;">
-            <span class="tag">流年：丙午（2026）→ 丁未（2027）</span>
-            <span class="tag">日返：8 宮超重（深層轉化）</span>
-          </div>
-          <p>18 個月唔係一條直線——而係一個<strong>「波浪」</strong>。有兩個高峰（2026 年 5–6 月同 2027 年 5–6 月）同兩個低谷（2026 年 8 月同 12 月、2027 年 8 月同 10–11 月）。</p>
-          <p class="mt-32">好消息係：大運戊戌＋法達木星兩個保護網一直喺度。就算流月唔好，你都有嘢撐住。</p>
-        </div>
-
-        <!-- Phase Overview -->
-        <div class="card reveal">
-          <div class="card-header">
-            <div class="card-icon">&#x25B6;</div>
-            <div><div class="card-title">四段弧線</div></div>
-          </div>
-
-          <div class="expandable">
-            <button class="expandable-trigger"><span>&#x25B6; 第一段：2026 年 5–9 月 · 考試週期</span><span class="chevron">&#x25BC;</span></button>
-            <div class="expandable-content"><div class="expandable-inner">
-              <p><strong>核心主題：</strong>備考 → 考試 → 恢復</p>
-              <p class="mt-32"><strong>能量走勢：</strong>▲▲▲▲▲ → ▲▲▲▲ → ▲▲▲ → ▲▲ → ▲▲▲▲▲</p>
-              <p class="mt-32"><strong>四系統疊加：</strong>八字丙午年火土大旺＋法達木＞太（太陽細限激活自我）＋日返 8 宮（深層轉化）＋SA 月亮合太陽（自我整合）。呢段時間你嘅「我」同「我嘅能力」會有一次深層嘅確認。</p>
-              <p class="mt-32"><strong>關鍵：</strong>7 月之前完成大部分溫書。8 月金旺消耗大——但大運戊戌＋法達木星雙重保護幫你頂住。</p>
-            </div></div>
-          </div>
-
-          <div class="expandable">
-            <button class="expandable-trigger"><span>&#x25B6; 第二段：2026 年 10 月 – 2027 年 2 月 · 冬季</span><span class="chevron">&#x25BC;</span></button>
-            <div class="expandable-content"><div class="expandable-inner">
-              <p><strong>核心主題：</strong>內在轉變＋冬季消耗</p>
-              <p class="mt-32">呢段係 18 個月入面最「暗」嘅一段——但暗嘅同時 SA 月亮合本命太陽喺深層發生緊。就好似一棵樹喺冬天落晒葉——睇落好似死咗，但根部正正喺冬天紮得最深。</p>
-              <p class="mt-32"><strong>法達盤注意：</strong>2027 年 3 月 5 日木＞太轉木＞金——你嘅焦點會由「自我」轉向「價值同愛」。呢個轉換會喺冬季尾段開始醞釀。</p>
-            </div></div>
-          </div>
-
-          <div class="expandable">
-            <button class="expandable-trigger"><span>&#x25B6; 第三段：2027 年 3–6 月 · 18 月之冠</span><span class="chevron">&#x25BC;</span></button>
-            <div class="expandable-content"><div class="expandable-inner">
-              <p><strong>核心主題：</strong>新機會 → 人脈回歸 → 火土最強</p>
-              <p class="mt-32">18 個月入面最「光」嘅一段。法達由木＞太轉入木＞金——你嘅焦點由內在轉向外在。</p>
-              <p class="mt-32"><strong>重要日期：</strong>2027 年 3 月 5 日法達轉換。到嗰陣你已經完成咗「自我整合」（木＞太）嘅功課，準備進入「價值同愛」（木＞金）嘅新階段。</p>
-            </div></div>
-          </div>
-
-          <div class="expandable">
-            <button class="expandable-trigger"><span>&#x25B6; 第四段：2027 年 7–11 月 · 收爐</span><span class="chevron">&#x25BC;</span></button>
-            <div class="expandable-content"><div class="expandable-inner">
-              <p><strong>核心主題：</strong>回落 → 三重酉（8月己酉）→ 恢復</p>
-              <p class="mt-32">7–8 月回落唔代表前功盡廢。前面 3–6 月建立嘅嘢唔會消失——佢哋只係「暫停」。法達木＞金代表呢段時間你嘅價值觀同人際關係會有新嘅發展。</p>
-            </div></div>
-          </div>
-        </div>
-
-        <!-- Month by Month -->
-        <div class="card reveal">
-          <div class="card-header">
-            <div class="card-icon">&#x25C8;</div>
-            <div><div class="card-title">逐月一覽</div></div>
-          </div>
-          <table class="data-table">
-            <thead><tr><th>月份</th><th>流月</th><th>評級</th><th>核心</th></tr></thead>
-            <tbody>
-              <tr><td>2026/5</td><td>甲午</td><td><span class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></td><td>溫書效率最高——甲己合土＋火氣最旺</td></tr>
-              <tr><td>2026/6</td><td>乙未</td><td><span class="stars">&#x2605;&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;</span></span></td><td>殺印相生＋未土幫身</td></tr>
-              <tr><td>2026/7</td><td>丙申</td><td><span class="stars">&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;</span></span></td><td>開始「收」——丙火保護但申金消耗</td></tr>
-              <tr style="background:rgba(231,76,60,0.08);"><td><strong>2026/8</strong></td><td><strong>丁酉</strong></td><td><span class="stars">&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;&#x2605;</span></span></td><td><strong>考試月——大運戊戌＋法達木星雙重保護</strong></td></tr>
-              <tr style="background:var(--accent-dim);"><td><strong>2026/9</strong></td><td><strong>戊戌</strong></td><td><span class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></td><td><strong>回血——大運流月雙戊戌最強保護</strong></td></tr>
-              <tr><td>2026/10</td><td>己亥</td><td><span class="stars">&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;</span></span></td><td>己土幫身但亥水消耗</td></tr>
-              <tr><td>2026/11</td><td>庚子前</td><td><span class="stars">&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;</span></span></td><td>旅行安排上半月</td></tr>
-              <tr style="background:rgba(231,76,60,0.08);"><td>2026/12</td><td>庚子</td><td><span class="stars">&#x2605;<span class="dim">&#x2605;&#x2605;&#x2605;&#x2605;</span></span></td><td>年尾最差——金水齊到但大運仍然撐住</td></tr>
-              <tr><td>2027/1</td><td>壬寅</td><td><span class="stars">&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;</span></span></td><td>接受內在變化</td></tr>
-              <tr><td>2027/2</td><td>癸卯</td><td><span class="stars">&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;&#x2605;</span></span></td><td>情緒波動——木＞太最後一個月</td></tr>
-              <tr style="background:var(--accent-dim);"><td><strong>2027/3</strong></td><td><strong>甲辰</strong></td><td><span class="stars">&#x2605;&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;</span></span></td><td><strong>法達轉換月（木＞太→木＞金）＋甲己合土</strong></td></tr>
-              <tr><td>2027/4</td><td>乙巳</td><td><span class="stars">&#x2605;&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;</span></span></td><td>殺印相生＋人脈回歸</td></tr>
-              <tr style="background:var(--accent-dim);"><td><strong>2027/5</strong></td><td><strong>丙午</strong></td><td><span class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></td><td><strong>火氣再現——開始新目標</strong></td></tr>
-              <tr style="background:var(--accent-dim);"><td><strong>2027/6</strong></td><td><strong>丁未</strong></td><td><span class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></td><td><strong>18 月之冠——做任何重大決定</strong></td></tr>
-              <tr><td>2027/7</td><td>戊申</td><td><span class="stars">&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;&#x2605;</span></span></td><td>接受回落</td></tr>
-              <tr style="background:rgba(231,76,60,0.08);"><td><strong>2027/8</strong></td><td><strong>己酉</strong></td><td><span class="stars">&#x2605;<span class="dim">&#x2605;&#x2605;&#x2605;&#x2605;</span></span></td><td><strong>三重酉再現——你上次捱過咗</strong></td></tr>
-              <tr><td>2027/9</td><td>庚戌</td><td><span class="stars">&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;</span></span></td><td>恢復——戌土回歸大運保護</td></tr>
-              <tr><td>2027/10–11</td><td>辛亥/壬子</td><td><span class="stars">&#x2605;<span class="dim">&#x2605;&#x2605;&#x2605;&#x2605;</span></span></td><td>收爐——保護力減弱係暫時</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- 18 Months Key Message -->
-        <div class="card reveal" style="border-color:var(--accent); border-width:2px;">
-          <div class="card-header">
-            <div class="card-icon" style="background:var(--accent-glow);">&#x2726;</div>
-            <div><div class="card-title">18 個月你要記住嘅三件事</div></div>
-          </div>
-          <p><strong>第一：2026–2027 係你呢步大運入面最好嘅兩年。</strong> 丙午＋丁未流年＋戊戌大運＋法達木星大時主＝四重保護。呢 18 個月係你最有資源做嘢嘅窗口。</p>
-          <p class="mt-32"><strong>第二：2027 年 3 月法達轉換係一個重要節點。</strong> 由木＞太（自我激活）轉入木＞金（價值同愛）。你嘅焦點會由「我係邊個」轉向「我想要咩」。呢個轉換你未必即刻感受到——但回望嘅時候你會見到呢個分水嶺。</p>
-          <p class="mt-32"><strong>第三：你嘅消耗係結構性嘅——但你嘅保護都係結構性嘅。</strong> 食傷 5 次＋6 宮超重＝持續消耗。但戊戌大運＋法達木星＋日返 8 宮（深層轉化而非消耗）＝持續保護。你唔會攰到冇——你只會攰到一個程度然後有嘢幫你返轉頭。</p>
-        </div>
-
-        <!-- ============================================================ -->
-        <!-- SECTION 2: YEARS (22–31) -->
-        <!-- ============================================================ -->
-        <div class="section-title reveal mt-32">逐年</div>
-        <div class="section-subtitle reveal">22–31 歲 · 戊戌大運 · 2023–2032</div>
-
-        <!-- 2023 -->
-        <div class="card reveal">
-          <div class="card-header">
-            <div class="card-icon">&#x25C6;</div>
-            <div>
-              <div class="card-number">2023 · 22 歲</div>
-              <div class="card-title">癸卯年 — 大運入門</div>
             </div>
-            <div class="stars" style="margin-left:auto;">&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;</span></div>
+
+            <div class="card reveal">
+              <div class="card-header">
+                <div class="card-icon">&#x2726;</div>
+                <div><div class="card-title">事業曲線</div></div>
+              </div>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-year">而家 · 20 出頭</div>
+                  <div class="timeline-title">播種期</div>
+                  <div class="timeline-desc">大運戊戌全面幫身——你嘅根基比之前任何時候都穩。6宮主飛10宮代表每日工作建構事業。</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-year">32 歲後 · 丁酉大運</div>
+                  <div class="timeline-title">消耗期</div>
+                  <div class="timeline-desc">天干偏印保護但地支食神消耗。由全面幫身變為有保護有消耗。</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-year">42 歲後 · 丙申大運</div>
+                  <div class="timeline-title">曙光期</div>
+                  <div class="timeline-desc">正印到位——保護力最強嘅大運。專業認證帶嚟收入升級。</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-year">52 歲後 · 乙未大運</div>
+                  <div class="timeline-title">穩固期</div>
+                  <div class="timeline-desc">殺印相生＋未土幫身。事業穩固。斗宿嘅逆轉開始明顯。</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot" style="background:var(--accent); border-color:var(--accent);"></div>
+                  <div class="timeline-year" style="color:var(--accent);">62 歲後 · 甲午大運</div>
+                  <div class="timeline-title">巔峰期</div>
+                  <div class="timeline-desc">金神被火鍛造成器。白蠟金成真金。斗宿逆轉完成。</div>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div class="tag-row">
-            <span class="tag">癸水偏財</span>
-            <span class="tag">卯木七殺</span>
-            <span class="tag">戊癸合化火</span>
-          </div>
-          <p>開始行戊戌大運。天干癸水被大運天干戊土合化火——忌神被化為用神。呢年你可能經歷一個「由舊轉新」嘅過程。法達盤：木＞火（2023.9.29 結束）轉入木＞太（2023.9.29 開始——但實際轉換喺 2025.6）。呢段時間法達仲係木＞火尾段，火星能量帶動行動。</p>
+
         </div>
 
-        <!-- 2024 -->
-        <div class="card reveal">
-          <div class="card-header">
-            <div class="card-icon">&#x25C6;</div>
-            <div>
-              <div class="card-number">2024 · 23 歲</div>
-              <div class="card-title">甲辰年 — 正官出現</div>
-            </div>
-            <div class="stars" style="margin-left:auto;">&#x2605;&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;</span></div>
-          </div>
-          <div class="tag-row">
-            <span class="tag">甲木正官</span>
-            <span class="tag">辰土劫財</span>
-            <span class="tag">甲己合土</span>
-          </div>
-          <p><strong>甲己合土＝正官合日主。</strong> 正官係你原局完全缺席嘅五行——第一次出現代表一個「新框架」進入你生命。法達：木＞火尾段（2025.6 轉入木＞太）。大運戊戌幫你頂住辰土劫財嘅競爭。</p>
-        </div>
+      </div>
+    </main>
 
-        <!-- 2025 -->
-        <div class="card reveal">
-          <div class="card-header">
-            <div class="card-icon">&#x25C6;</div>
-            <div>
-              <div class="card-number">2025 · 24 歲</div>
-              <div class="card-title">乙巳年 — 殺印相生 · 法達轉換</div>
-            </div>
-            <div class="stars" style="margin-left:auto;">&#x2605;&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;</span></div>
-          </div>
-          <div class="tag-row">
-            <span class="tag">乙木七殺</span>
-            <span class="tag">巳火正印</span>
-            <span class="tag">殺印相生</span>
-          </div>
-          <p><strong>殺印相生——壓力轉化為學習力。</strong> 同時 <strong>2025 年 6 月 17 日法達由木＞火轉入木＞太</strong>——你嘅焦點由「行動」轉向「自我意識」。呢個轉換配合殺印相生＝壓力迫你認識自己。巳火正印（用神）同時係年支回歸——你嘅根基被激活。</p>
-        </div>
+    <footer class="footer">
+      <p>人生地圖 · 時間線</p>
+    </footer>
+  </div>
 
-        <!-- 2026 -->
-        <div class="card reveal" style="border-color:var(--accent); border-width:2px;">
-          <div class="card-header">
-            <div class="card-icon" style="background:var(--accent-glow);">&#x2605;</div>
-            <div>
-              <div class="card-number">2026 · 25 歲 · 高峰</div>
-              <div class="card-title">丙午年 — 四重保護到位</div>
-            </div>
-            <div class="stars" style="margin-left:auto;">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</div>
-          </div>
-          <div class="tag-row">
-            <span class="tag" style="border-color:var(--accent);">丙火正印</span>
-            <span class="tag" style="border-color:var(--accent);">午火偏印</span>
-            <span class="tag" style="border-color:var(--accent);">八字戊戌＋丙午</span>
-            <span class="tag" style="border-color:var(--accent);">法達木＞太</span>
-          </div>
-          <p><strong>呢步大運入面用神最強嘅一年。</strong></p>
-          <p class="mt-32"><strong>四系統全部到位：</strong></p>
-          <p>八字：大運戊戌（土）＋流年丙午（火）＝火土大旺。</p>
-          <p>法達：木＞太（木星保護＋太陽自我激活）。</p>
-          <p>太陽弧：SA 月亮合本命太陽（0°28'）＝自我整合。</p>
-          <p>日返：8 宮超重＝深層轉化。</p>
-          <p class="mt-32">如果喺呢年考試，通過嘅機會係 18 個月入面最高。</p>
-
-          <div class="expandable mt-32">
-            <button class="expandable-trigger"><span>逐月重點</span><span class="chevron">&#x25BC;</span></button>
-            <div class="expandable-content"><div class="expandable-inner">
-              <table class="data-table">
-                <thead><tr><th>月</th><th>流月</th><th>評級</th><th>重點</th></tr></thead>
-                <tbody>
-                  <tr><td>5</td><td>甲午</td><td><span class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></td><td>溫書效率最高</td></tr>
-                  <tr><td>6</td><td>乙未</td><td><span class="stars">&#x2605;&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;</span></span></td><td>殺印相生＋未土幫身</td></tr>
-                  <tr><td>7</td><td>丙申</td><td><span class="stars">&#x2605;&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;</span></span></td><td>開始「收」</td></tr>
-                  <tr style="background:rgba(231,76,60,0.08);"><td><strong>8</strong></td><td><strong>丁酉</strong></td><td><span class="stars">&#x2605;&#x2605;<span class="dim">&#x2605;&#x2605;&#x2605;</span></span></td><td><strong>考試月——雙重保護頂住</strong></td></tr>
-                  <tr style="background:var(--accent-dim);"><td><strong>9</strong></td><td><strong>戊戌</strong></td><td><span class="stars">&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span></td><td><strong>回血——雙戊戌最強保護</strong></td></tr>
-                </tbody>
+  <script src="js/app.js"></script>
+</body>
+</html>
